@@ -20,65 +20,70 @@
     font-weight: bold;
     border-bottom: 2px solid #4D18B4;
     padding: 50px 50px 50px 50px;
+    /* box-shadow: 5px 5px 5px 5px blue; */
    /* background-image: linear-gradient(to right #4d18b4, #32c0c1); */
 }
 
-.logo {
+.navbar__logo {
     font-weight: bold;
     height: 150px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-
-
-.menu {
+.navbar__a, .dropdown__a {
+    text-decoration: none;
+}
+.navbar__menu {
     display: flex;
     gap: 20px;
     list-style-type: none;
     border: 2px solid black;
+    
 }
 
-.menu li {
-    margin-right: 20px;
-}
-
-.menu li a {
-    text-decoration: none;
-}
-
-.dropdown {
+.navbar__dropdown {
     position: relative;
     /* display: none; */
 }
 
-.dropdown-menu {
+.dropdown__ul {
     display: none;
-    background-color: #E6E6E6;
-   
+    background-color: white;
     position: absolute;
     min-width: 80px;
     text-wrap: nowrap;
     padding: 10px;
-    left: 0px;
-    top: 100%;
+   /* left: 0px;  ? */
+   /* top: 100%; ? */
     list-style-type: none;
+    
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown__li {
+    text-decoration: none;
+    padding: 5px;
+}
+ /*.navbar__dropdown:hover .dropdown-li {
     display: block;
+} */
+
+/* no entiendo dónde poner el hover */
+.navbar__dropdown:hover .dropdown__ul {
+    display: block;
+    top: 25px;
 }
 
-.menu li:nth-child(even) a {
+.navbar__menu li:nth-child(even) a {
     color: #3860f1;
 }
 
-.menu li:nth-child(odd) a {
+.navbar__menu li:nth-child(odd) a {
     color: #D64879;
 }
 
-/*FIN ESTILOS DEL HEADER*/
 
-.logo-carrito {
+.dropdown__carrito {
     color: #d64879
-}
+    }
+/*FIN ESTILOS DEL HEADER*/

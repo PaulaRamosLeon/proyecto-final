@@ -18,7 +18,7 @@
     
     
 }
-.review {
+.reviews__review {
     border-radius: 30px;
     box-shadow: 5px 5px 5px 5px grey;
     padding: 3px;
@@ -29,9 +29,9 @@
     padding: 30px;
     gap: 30px;
     background-image: linear-gradient(to right, #ffd8e5,#ff98bc);
-    
+
 }
-.foto-review {
+.review__foto {
     border-radius: 50%;
     border-color: #3860f1;
     border-style: solid;
@@ -42,13 +42,8 @@
     
 }
 
-.texto-review {
-    color: black;
-    
-    
-}
 
-h3 {
+.review__nombre {
     color: #D64879;
     margin-bottom: 10px;
     font-family: Sansita;
@@ -59,7 +54,7 @@ p {
     font-family: Poppins;
 }
 
-.grid-reviews {
+/*.grid-reviews {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -68,4 +63,4 @@ p {
 grid-review1 {
     grid-column-start: 1;
   grid-column-end: 3;
-}
+} */
