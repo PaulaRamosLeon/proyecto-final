@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.paginaproducto {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: lightblue;
+}
+
+.detalles__lista {
+    list-style-type: none;
+}
+.producto__boton {
+    cursor: pointer;
+    background-color: #597CFF;
+    width: 130px;
+    height: 30px;
+    border-color: #597CFF;
+    border-radius: 50px;
+    color: white;
+    }

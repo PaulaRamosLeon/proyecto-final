@@ -2,7 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
+}
+
+.main {
+    padding: 10px;
+    background-color: #3D708D;
+    border-radius: 25px;
+    border: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.contenedor {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.contenedor__fila {
+    display: flex;
+    flex-direction: row;
 }
 
 /*ESTILOS DEL HEADER*/
@@ -12,34 +34,33 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
-    height: 100px;
+    /* NECESARIO???*/
+    height: 5px;
+    /*NO HACE NADA???*/
     flex-direction: row;
     align-items: center;
-    font-family: "Roboto";
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 2px solid #4D18B4;
-    padding: 50px 50px 50px 50px;
-    /* box-shadow: 5px 5px 5px 5px blue; */
-   /* background-image: linear-gradient(to right #4d18b4, #32c0c1); */
+    padding: 50px 50px 30px 50px;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .navbar__logo {
-    font-weight: bold;
-    height: 150px;
+    height: 100px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.navbar__a, .dropdown__a {
+.navbar__a,
+.dropdown__a {
     text-decoration: none;
 }
+
 .navbar__menu {
     display: flex;
     gap: 20px;
     list-style-type: none;
-    border: 2px solid black;
-    
+
 }
 
 .navbar__dropdown {
@@ -53,18 +74,20 @@
     position: absolute;
     min-width: 80px;
     text-wrap: nowrap;
+    /* ESTO HACE ALGO??  */
     padding: 10px;
-   /* left: 0px;  ? */
-   /* top: 100%; ? */
+    /* left: 0px;  ? */
+    /* top: 100%; ? */
     list-style-type: none;
-    
+
 }
 
 .dropdown__li {
     text-decoration: none;
     padding: 5px;
 }
- /*.navbar__dropdown:hover .dropdown-li {
+
+/*.navbar__dropdown:hover .dropdown-li {
     display: block;
 } */
 
@@ -84,6 +107,89 @@
 
 
 .dropdown__carrito {
-    color: #d64879
-    }
+    /*   color: #d64879 DIRÍA QUE ESTO NO HACE NADA */
+}
+
+
 /*FIN ESTILOS DEL HEADER*/
+
+/* ESTILOS BANNER */
+.banner {
+    width: 100%;
+    background-color: red;
+    height: 300px;
+}
+
+
+.seccion__novedades {
+    background-color: pink;
+    flex-grow: 2;
+}
+
+.seccion__vendidos {
+flex-grow: 1;
+background-color: lightgreen;
+}
+.novedades {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    padding: 15px;
+   
+}
+
+
+.libro__titulo {
+    font-size: 1em;
+    padding-bottom: 8px;
+}
+
+.libro__autor {
+    font-size: 0.8em;
+    padding-bottom: 8px;
+}
+
+.libro__comprar {
+    align-self: center;
+    cursor: pointer;
+    background-color: #597CFF;
+    width: 6em;
+    height: 2em;
+    border-color: #597CFF;
+    border-radius: 50px;
+    color: white;
+}
+
+.novedades__h3,
+.vendidos__h3 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.vendidos {
+    background-color: green;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.novedades__libro .libro__portada {
+    max-height: 220px;
+
+}
+
+.vendidos__libro .libro__portada {
+    height: 160px;
+
+}
+.vendidos__lista {
+    list-style-type: none;
+}
+.generos {
+    background-color: grey;
+    height: 20rem;
+}
