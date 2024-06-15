@@ -126,18 +126,29 @@
     flex-grow: 2;
 }
 
-.seccion__vendidos {
-flex-grow: 1;
-background-color: lightgreen;
+.seccion__generos {
+    width: 30%;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
 }
+
+.genero {
+    background-color: grey;
+    height: 20%;
+}
+
 .novedades {
-    
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     padding: 15px;
-   
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -155,8 +166,8 @@ background-color: lightgreen;
     align-self: center;
     cursor: pointer;
     background-color: #597CFF;
-    width: 6em;
-    height: 2em;
+    width: 10em;
+    height: 3em;
     border-color: #597CFF;
     border-radius: 50px;
     color: white;
@@ -173,8 +184,8 @@ background-color: lightgreen;
     width: 100%;
     padding: 15px;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .novedades__libro .libro__portada {
@@ -182,14 +193,34 @@ background-color: lightgreen;
 
 }
 
+.vendidos__libro {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: red;
+}
+
 .vendidos__libro .libro__portada {
-    height: 160px;
+    height: 200px;
 
 }
-.vendidos__lista {
-    list-style-type: none;
+
+
+
+/*ESTILOS FOOTER*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 50px 50px 30px 50px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 0px 0px 25px 25px;
 }
-.generos {
-    background-color: grey;
-    height: 20rem;
+
+.footer__redes i {
+    font-size: 30px;
+    padding: 5px;
+
 }
