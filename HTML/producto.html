@@ -6,28 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
     <link rel="stylesheet" href="../CSS/producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b5178f0cc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main class="paginaproducto">
-        <div class="producto"></div>
-
-        <div class="producto__imagen"></div>
-        <div class="producto__info">
-            <h1 class="producto__h1">Título del libro</h1>
-            <h2>Autor</h2>
-            <p class="producto__sinopsis"></p>
-            <h3 class="producto__detalles"></h3>
-            <ul class="detalles__lista">
-                <li>ISBN:</li>
-                <li>Encuadernación:</li>
-                <li>Tamaño:</li>
-                <p>Precio</p>
-                <button class="producto__boton">Añadir al carrito</button>
-            </ul>
+        <div class="producto">
+            <div class="producto__izquierda">
+                <img src="../imgs/libros/Filstrup.png" alt="Filstrup" class="producto__imagen">
+                <p class="producto__fragmento"><i class="fa-solid fa-book" style="color: #597cff;"></i> Leer un
+                    fragmento</p>
+            </div>
+            <div class="producto__info">
+                <h1 class="producto__h1">Filstrup</h1>
+                <h2 class="producto__autor">Autor</h2>
+                <p class="producto__sinopsis"></p>
+                <h3 class="producto__detalles"></h3>
+                <ul class="detalles__lista">
+                    <li>ISBN:</li>
+                    <li>Encuadernación:</li>
+                    <li>Tamaño:</li>
+                    <li>Edad recomendada:</li>
+                    <p>Precio</p>
+                    <button class="producto__boton"><a class="dropdown__a dropdown__carrito" href="#"><i
+                                class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a> Añadir al
+                        carrito</button>
+                </ul>
+            </div>
         </div>
 
+        <div class="reviews">
+            <div class="reviews__review">
+                <img src="../imgs/foto-review-1.png" alt="Manuel-Garcia" class="review__foto">
 
+                </img>
+                <div class="review__info">
+                    <h3 class="review__nombre">María Sampedro</h3>
+                    <p class="review__texto">¡Me encantan los álbumes ilustrados de Valkiria! Sus ilustraciones atraen a
+                        los niños y las historias terminan de cautivarlos. Han conseguido un equilibrio perfecto entre
+                        entretenimiento y educación que les ha hecho consolidarse como una referencia imprescindible en
+                        la literatura infantil.</p>
+                </div>
+            </div>
+
+            <div class="reviews__review">
+                <img src="../imgs/foto-review-2.png" alt="Manuel-Garcia" class="review__foto">
+
+                </img>
+                <div class="review__info">
+                    <h3 class="review__nombre">Marcos López</h3>
+                    <p class="review__texto">Las novelas gráficas de Valkiria son una joya tanto para jóvenes como para
+                        adultos. Sus ilustraciones y los textos entrelazan humor y aventura. Además, abordan temas
+                        complejos de manera accesible, con personajes diversos y entrañables. La calidad de las
+                        ediciones es impecable, con un diseño cuidado y atención al detalle, haciendo que cada libro sea
+                        una pequeña obra de arte.</p>
+                </div>
 
 
     </main>

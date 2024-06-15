@@ -2,24 +2,110 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 .paginaproducto {
-    width: 90vw;
+    width: 80vw;
     margin: 20px auto;
     padding: 0 20px;
     background-color: lightblue;
 }
 
+.producto {
+    display: flex;
+    flex-direction: row;
+    line-height: 2rem;
+}
+
+
+.producto__izquierda {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    align-items: center;
+    gap: 20px;
+}
+
+.producto__autor {
+    margin: 20px;
+}
+
 .detalles__lista {
     list-style-type: none;
 }
+
 .producto__boton {
     cursor: pointer;
     background-color: #597CFF;
-    width: 130px;
+    width: 150px;
     height: 30px;
     border-color: #597CFF;
     border-radius: 50px;
     color: white;
-    }
+    margin-top: 1rem;
+}
+
+.producto__imagen {
+    height: 350px;
+
+}
+
+.producto__info {
+    margin-left: 30rem;
+    margin-top: 5rem;
+}
+
+.producto__fragmento {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+/*ESTILO REVIEWS*/
+
+.reviews {
+    padding: 3px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+   
+}
+
+.reviews__review {
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px grey;
+    padding: 3px;
+    min-height: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    background-image: linear-gradient(to right, #ffd8e5, #ff98bc);
+
+}
+
+.review__foto {
+    border-radius: 50%;
+    border-color: #3860f1;
+    border-style: solid;
+    border-width: 5px;
+    width: 150px;
+    height: 150px;
+
+
+}
+
+
+.review__nombre {
+    color: #D64879;
+    margin-bottom: 10px;
+    font-family: Sansita;
+    font-size: 30px;
+}
+
+p {
+    font-family: Poppins;
+}
