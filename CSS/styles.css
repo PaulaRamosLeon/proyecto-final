@@ -4,15 +4,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
-
+body {
+    background-color: #E5E8F1;
+    background-image: url('../imgs/fondo.png');
+}
 .main {
-    padding: 10px;
-    background-color: #3D708D;
+  
     border-radius: 25px;
-    border: 10px;
+    border: 5px solid white;
     display: flex;
     flex-direction: column;
     margin: 1rem;
+    background-color: #f5f5fd98;
 }
 
 .contenedor {
@@ -33,16 +36,11 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    /* NECESARIO???*/
-    height: 5px;
-    /*NO HACE NADA???*/
-    flex-direction: row;
+    height: 5rem;
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 50px 50px 30px 50px;
-    border-radius: 25px 25px 0px 0px;
+    justify-content: space-evenly;
 }
 
 .navbar__logo {
@@ -105,10 +103,6 @@
     color: #D64879;
 }
 
-
-.dropdown__carrito {
-    /*   color: #d64879 DIRÍA QUE ESTO NO HACE NADA */
-}
 
 
 /*FIN ESTILOS DEL HEADER*/
@@ -215,7 +209,7 @@
     color: white;
     justify-items: center;
     align-items: center;
-    background-color: orange;
+    background-color: rgba(0, 0, 0, 0.745);
     border-radius: 0px 0px 25px 25px;
 }
 

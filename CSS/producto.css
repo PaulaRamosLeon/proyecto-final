@@ -9,7 +9,7 @@
     width: 80vw;
     margin: 20px auto;
     padding: 0 20px;
-    background-color: lightblue;
+
 }
 
 .producto {
@@ -34,16 +34,24 @@
 .detalles__lista {
     list-style-type: none;
 }
-
 .libro__comprar {
     cursor: pointer;
     background-color: #597CFF;
-    width: 150px;
-    height: 30px;
     border-color: #597CFF;
-    border-radius: 50px;
     color: white;
+    border-radius: 50px;
     margin-top: 1rem;
+}
+.producto__detalles .libro__comprar {
+    width: 14rem;
+    height: 3rem;
+    font-size: 18px;
+    align-self: center;
+}
+.relacionados__libro .libro__comprar {
+    width: 10rem;
+    height: 2rem;
+    
 }
 
 .producto__imagen {
@@ -52,23 +60,39 @@
 }
 
 .producto__info {
-    margin-left: 30rem;
+    margin-left: 10rem;
     margin-top: 5rem;
 }
 
+.producto__sinopsis{
+    margin-bottom: 1em;
+}
+.producto__detalles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .producto__fragmento {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+    margin-top: 1em;
+    padding: 0.5rem;
 }
 
 /*ESTILO REVIEWS*/
 
 .reviews {
     padding-top: 3rem;
-    display: grid;   
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    display: flex;   
+    flex-direction: row;
     justify-items: center;
+    padding-bottom: 3rem;   
+}
+.reviews__columna{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
 }
 
 .reviews__review {
@@ -76,6 +100,7 @@
     box-shadow: 5px 5px 5px 5px grey;
     padding: 3px;
     min-height: 10vw;
+    min-width: 40em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,7 +112,7 @@
 }
 
 .review__info {
-    padding: 40px;
+    padding: 1.5rem;
 }
 .review__foto {
     border-radius: 50%;
@@ -105,7 +130,7 @@
     color: #D64879;
     margin-bottom: 10px;
     font-family: Sansita;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p {
@@ -125,6 +150,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 2rem;
 }
 
 .novedades__libro .libro__portada {
@@ -147,4 +173,9 @@ p {
     font-size: 1.5em;
 }
 
+@media only screen and (max-width: 700px){
+    .reviews{
+        flex-wrap: wrap;
+    }
+}
 
