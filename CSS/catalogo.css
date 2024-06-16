@@ -1,10 +1,7 @@
-.seccion__novedades {
-    background-color: pink;
-    flex-grow: 2;
-}
 
 
-.novedades {
+
+.catalogo {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,13 +13,59 @@
 }
 
 
-.novedades__h3{
+.catalogo__h3{
     font-size: 1.5em;
     margin: 10px;
 }
 
 
-.novedades__libro .libro__portada {
-    max-height: 220px;
+.catalogo__libro .libro__portada {
+    height: 25rem;
 
+}
+
+.catalogo__botones {
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+.catalogo__libro .libro__titulo {
+
+}
+.catalogo__libro .libro__autor {
+
+}
+.catalogo__libro .libro__comprar {
+    width: 8rem;
+    border-color: #597CFF;
+    align-self: center;
+    cursor: pointer;
+    background-color: #597CFF;
+    border-radius: 50px;
+    height: 3em;
+    width: 4.5rem;
+
+}
+
+.catalogo__libro .libro__masinfo {
+    width: 9rem;
+}
+
+.paginacion {
+display: flex;
+justify-content: flex-end;
+padding-right: 9rem;
+gap: 2px;
+padding-bottom: 1rem;
+padding-top: 1rem;
+
+
+}
+.paginacion__botones {font-weight: bold;
+    width: 3rem;
+    height: 2rem;
+    border-color: #597CFF;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #f5f5fd98;
 }

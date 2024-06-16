@@ -14,7 +14,7 @@ body {
     border: 5px solid white;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 2rem 8rem 2rem 8rem;
     background-color: #f5f5fd98;
 }
 
@@ -156,7 +156,7 @@ body {
     padding-bottom: 8px;
 }
 
-.libro__comprar {
+.libro__masinfo {
     align-self: center;
     cursor: pointer;
     background-color: #597CFF;
