@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+
 body {
     background-color: #E5E8F1;
     background-image: url('../imgs/fondo.png');
 }
+
 .main {
-  
+
     border-radius: 25px;
     border: 5px solid white;
     display: flex;
@@ -77,12 +79,13 @@ body {
     /* left: 0px;  ? */
     /* top: 100%; ? */
     list-style-type: none;
-
+  
 }
 
 .dropdown__li {
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
+    border-bottom: 1px solid blue;
 }
 
 /*.navbar__dropdown:hover .dropdown-li {
@@ -111,12 +114,22 @@ body {
 .banner {
     width: 100%;
     background-color: red;
-    height: 300px;
+    
+}
+.banner__imagenes {
+    display: flex;
+
+}
+.banner__imagen {
+    height: 30rem;
+    object-fit: contain;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 600px;
+    max-height: 600px;
 }
 
-
 .seccion__novedades {
-    background-color: pink;
     flex-grow: 2;
 }
 
@@ -166,11 +179,23 @@ body {
     border-radius: 50px;
     color: white;
 }
-
-.novedades__h3,
-.vendidos__h3 {
+.contenedor__botones {
+    display: flex;
+    justify-content: center;
+}
+.novedades__boton,
+.vendidos__h3,
+.recomendado__boton {
     font-size: 1.5em;
     margin: 10px;
+}
+
+.novedades__boton,
+.recomendado__boton {
+    border: 3px dashed #597CFF;
+    padding: 0.5em;
+    background-color: white;
+    
 }
 
 .vendidos {
