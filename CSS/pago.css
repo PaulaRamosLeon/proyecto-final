@@ -1,0 +1,22 @@
+.compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.compra__h1 {
+    padding: 2em 0em 0em 0em;
+}
+
+.compra__grafico {
+    width: 30vw;
+}
+
+.compra__proceso {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 0em 2em 2em 0em;
+}
