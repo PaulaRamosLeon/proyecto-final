@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valkiria - Términos y condiciones</title>
+    <!-- roboto-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/2b5178f0cc.js" crossorigin="anonymous"></script>
+    <!--MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/registro.css">
+    <link rel="icon" type="image/png" href="../imgs/logoV.png">
+</head>
+
+<body>
+    <div class="main">
+        <!--Aquí empieza el header-->
+        <header class="navbar">
+            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="logo-Valkiria">
+            </img>
+            <ul class="navbar__menu">
+                <li class="navbar__li">
+                    <a class="navbar__a" href="index.html">Inicio</a>
+                </li>
+                <li class="navbar__li">
+                    <a class="navbar__a" href="perfil-user.html">Mi perfil</a>
+                </li>
+
+
+                <li class="navbar__dropdown navbar__li">
+                    <a class="dropdown__a" href="catalogo.html">Catálogo</a>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a href="#"></a>> Descubriendo el mundo</a></li>
+                        <li class="dropdown__li"> <a href="#"></a>> Novela ilustrada</a></li>
+                        <li class="dropdown__li"> <a href="#"></a>> Libros de cartón</a></li>
+                        <li class="dropdown__li"> <a href="#"></a>> Libros escolares</a></li>
+                        <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__li">
+                    <a class="dropdown__a" href="#">Blog</a>
+                </li>
+                <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#">Cerrar sesión</a></li>
+                <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
+                            class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
+                <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </header>
+        <!--Aquí acaba el header-->
+        <h1 class="registro__h1">Formulario de registro</h1>
+
+        <form class="formulario" id="registro-usuario" action="../HTML/index.html" method="get">
+            <fieldset class="formulario__fieldset">
+                <legend class="fieldset__legend">Date de alta</legend>
+                <label class="fieldset__label" for="usuario">Escoge un nombre de usuario:</label>
+                <input class="fieldset__input" type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario"
+                    required>
+                <label class="fieldset__label" for="email">Email:</label>
+                <input class="fieldset__input" type="email" name="email" id="email" placeholder="Escribe tu email"
+                    required>
+                <label class="fieldset__label" for="password">Contraseña:</label>
+                <input class="fieldset__input" type="password" id="password" name="password" placeholder="Contraseña"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Debe contener al menos un número, una mayúscula, una minúscula y, como mínimo, 8 caracteres"
+                    required>
+                <label class="fieldset__label" for="confirm-passwordpassword">Repite tu contraseña:</label>
+                <input class="fieldset__input" type="password" id="confirm-password" name="confirm-password"
+                    placeholder="Repite tu contraseña" required>
+                <label class="fieldset__label" for="pais">Indica tu país:</label>
+                <select class="fieldset__select" name="pais" id="pais" placeholder="¿Cuál es tu país?" cols="30"
+                    rows="1">
+                    <option value="españa">España</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="marruecos">Marruecos</option>
+
+                </select>
+                <label class="fieldset__label" for="date">Indica tu fecha de nacimiento: </label>
+                <input class="fieldset__input" type="date" id="date" name="Fecha-nacimiento">
+                <div class="fila">
+                    <input type="checkbox" name="fila" required>Acepto los <a href="../HTML/tyc.html"
+                        target="_blank">términos y
+                        condiciones
+                    </a></input>
+                </div>
+                <input class="enviar" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <!--Aquí empieza el footer-->
+        <footer class="footer">
+            <div class="footer__redes">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="footer__politica">
+                <p class="tyc__parrafo">Política de privacidad</p>
+                <p class="tyc__parrafo">Política de cookies</p>
+            </div>
+            <div class="footer__informacion">
+                <p class="tyc__parrafo">Sobre nosotros</p>
+                <p class="tyc__parrafo">Términos y condiciones</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

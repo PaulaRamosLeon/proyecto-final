@@ -18,13 +18,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="icon" type="image/png" href="../imgs/logoV.png">
+    <script defer src="../JavaScript/banner.js"></script>
 </head>
 
 <body>
     <div class="main">
         <!--Aquí empieza el header-->
         <header class="navbar">
-            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="logo-TourBuddies">
+            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="logo-Valkiria">
             </img>
             <ul class="navbar__menu">
                 <li class="navbar__li">
@@ -56,14 +57,19 @@
             </ul>
         </header>
         <!--Aquí acaba el header-->
+
         <section class="contenedor">
+            <!--Inicio banner-->
             <div class="banner">
                 <div class="banner__imagenes">
-                    <img src="../imgs/banners-valkiria.png" alt="banner-divulgacion" class="banner__imagen">
-                    <img src="../imgs/banners-valkiria.png" alt="banner-divulgacion" class="banner__imagen">
+                    <img src="../imgs/banner-divulgacion.png" alt="banner-divulgacion" class="banner__imagen">
+                    <img src="../imgs/banner-oferta.png" alt="banner-oferta" class="banner__imagen">
+                    <img src="../imgs/banner-carton.png" alt="banner-carton" class="banner__imagen">
                 </div>
-                <button class="banner__atras">ATRÁS</button>
-                <button class="banner__siguiente">SIGUIENTE</button>
+                <div class="banner__botones">
+                <button class="banner__atras"><i class="fa-solid fa-arrow-left" style="color: #597cff;"></i></button>
+                <button class="banner__siguiente"><i class="fa-solid fa-arrow-right" style="color: #597cff;"></i></button>
+            </div>
             </div>
             <div class="contenedor__fila">
                 <div class="seccion__novedades">
@@ -111,20 +117,26 @@
                     </div>
                 </div>
                 <div class="seccion__generos">
-                    <div class="genero"><img src="" alt="">
-                        <h4>GÉNERO</h4>
+                    
+                    <div class="genero genero__mundo">
+                        <h4 class="genero__h4">Descubriendo el mundo</h4>
+                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
                     </div>
-                    <div class="genero"><img src="" alt="">
-                        <h4>GÉNERO</h4>
+                    <div class="genero genero__carton">
+                        <h4 class="genero__h4">Libros de cartón</h4>
+                        <img src="../imgs/carton.png" alt="Libros de cartón" class="genero__imagen">
                     </div>
-                    <div class="genero"><img src="" alt="">
-                        <h4>GÉNERO</h4>
+                    <div class="genero genero__novela">
+                        <h4 class="genero__h4">Novela ilustrada</h4>
+                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
                     </div>
-                    <div class="genero"><img src="" alt="">
-                        <h4>GÉNERO</h4>
+                    <div class="genero genero__escolares">
+                        <h4 class="genero__h4">Libros escolares</h4>
+                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
                     </div>
-                    <div class="genero"><img src="" alt="">
-                        <h4>GÉNERO</h4>
+                    <div class="genero genero__albumes">
+                        <h4 class="genero__h4">Álbumes ilustrados</h4>
+                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
                     </div>
                 </div>
             </div>
@@ -173,7 +185,7 @@
         </footer>
     </div>
 
-    <script src="../JavaScript/script.js"></script>
+
 </body>
 
 </html>

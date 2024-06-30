@@ -30,6 +30,7 @@ body {
 .contenedor__fila {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /*ESTILOS DEL HEADER*/
@@ -73,18 +74,18 @@ body {
     position: absolute;
     min-width: 80px;
     text-wrap: nowrap;
-    /* ESTO HACE ALGO??  */
     padding: 10px;
     /* left: 0px;  ? */
     /* top: 100%; ? */
     list-style-type: none;
-  
+    z-index: 2;
+    border-radius: 10px;
 }
 
 .dropdown__li {
     text-decoration: none;
     padding: 8px;
-    border-bottom: 1px solid blue;
+
 }
 
 /*.navbar__dropdown:hover .dropdown-li {
@@ -112,20 +113,33 @@ body {
 /* ESTILOS BANNER */
 .banner {
     width: 100%;
-    background-color: red;
-    
+    overflow: hidden;
+    margin: 0em 0em 3em 0em;
 }
+
 .banner__imagenes {
     display: flex;
-
+    height: 30em;
+    transition: transform 0.5s ease;
+    z-index: 1;
 }
-.banner__imagen {
-    height: 30rem;
-    object-fit: contain;
-    min-width: 400px;
-    max-width: 400px;
-    min-height: 600px;
-    max-height: 600px;
+
+.banner__botones {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -15em;
+}
+
+.banner__atras,
+.banner__siguiente {
+    cursor: pointer;
+    background-color: white;
+    width: 3em;
+    height: 3em;
+    border-color: #597cff;
+    border-radius: 50px;
+    margin: 0em 3em 0em 3em;
 }
 
 .seccion__novedades {
@@ -133,8 +147,7 @@ body {
 }
 
 .seccion__generos {
-    width: 30%;
-    background-color: lightgreen;
+    width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -142,10 +155,38 @@ body {
 }
 
 .genero {
-    background-color: grey;
-    height: 20%;
+    border-radius: 2em;
+    height: 11em;
+    padding: 1em 3em 1em 3em;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
 }
 
+.genero__h4 {
+    
+    font-size: 1.8em;
+    position: relative;
+    top: 1em;
+}
+
+.genero__imagen {
+    width: 9em;
+    object-fit: contain;
+    position: relative;
+    right: 1em;
+
+}
+.genero__mundo {
+    background: linear-gradient(90deg, rgba(207, 233, 187, 1) 6%, rgba(172, 237, 123, 1) 99%);
+    color: #038948;
+}
+
+.genero__carton {
+    background: linear-gradient(90deg, rgba(250,187,153,1) 6%, rgba(255,159,70,1) 99%);
+    color: #DD4605;
+}
 .novedades {
 
     display: grid;
@@ -178,10 +219,12 @@ body {
     border-radius: 50px;
     color: white;
 }
+
 .contenedor__botones {
     display: flex;
     justify-content: center;
 }
+
 .novedades__boton,
 .vendidos__h3,
 .recomendado__boton {
@@ -191,14 +234,14 @@ body {
 
 .novedades__boton,
 .recomendado__boton {
-    border: 3px dashed #597CFF;
+    border-color: #597CFF;
     padding: 0.5em;
-    background-color: white;
-    
+    background-color: rgba(255, 255, 255, 0.414);
+    border-radius: 50px;
+    box-shadow: 24px 9px 78px -23px rgba(89, 124, 255, 1);
 }
 
 .vendidos {
-    background-color: green;
     width: 100%;
     padding: 15px;
     display: flex;
@@ -214,7 +257,6 @@ body {
 .vendidos__libro {
     margin-left: 2rem;
     margin-right: 2rem;
-    background-color: red;
 }
 
 .vendidos__libro .libro__portada {
