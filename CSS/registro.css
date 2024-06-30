@@ -17,6 +17,14 @@
     color: #597CFF;
 }
 
+.registro__h2{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    color:#D64879;
+
+}
+
 .fila {
     flex-direction: row;
     gap: 5px;
