@@ -20,6 +20,8 @@ body {
     background-color: #f5f5fd98;
 }
 
+
+
 .contenedor {
 
     display: flex;
@@ -283,4 +285,16 @@ body {
     font-size: 30px;
     padding: 5px;
 
+}
+
+
+@media only screen 
+   and (max-width : 880px) {
+   .main{
+    margin: 1em 1em 1em 1em;
+   }
+
+   .navbar__menu{
+    display: none;
+   }
 }
