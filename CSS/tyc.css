@@ -8,11 +8,11 @@
 }
 
 .tyc__h2 {
-    color: #3860f1;
+    color: var(--primary-color);
 }
 
 .tyc__h1 {
-    color: #D64879;
+    color: var(--secondary-color);
 }
 
 .tyc__parrafo {

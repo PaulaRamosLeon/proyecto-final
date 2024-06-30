@@ -1,5 +1,5 @@
 .formulario__fieldset {
-    border: 2px solid #D64879;
+    border: 2px solid var(--secondary-color);
     border-radius: 15px;
     background-color: #ffffff;
     display: flex;
@@ -14,14 +14,14 @@
     display: flex;
     justify-content: center;
     padding: 1em;
-    color: #597CFF;
+    color: var(--primary-color);
 }
 
 .registro__h2{
     display: flex;
     justify-content: center;
     padding: 1em;
-    color:#D64879;
+    color:var(--secondary-color);
 
 }
 
@@ -54,7 +54,7 @@
 .fieldset__legend {
     font-size: larger;
     font-weight: bold;
-    color: #D64879;
+    color: var(--secondary-color);
     border-radius: 10px;
     background-color: #ffd0e0;
     padding: 5px 15px 5px 15px;
@@ -68,8 +68,8 @@
 }
 
 .enviar {
-    border: 2px solid #597CFF;
-    background-color: #597CFF;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 20px;
     color: white;
     width: 80px;

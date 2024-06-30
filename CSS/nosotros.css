@@ -9,11 +9,11 @@
 }
 
 .nosotros__h2 {
-    color: #3860f1;
+    color: var(--primary-color);
 }
 
 .nosotros__h1 {
-    color: #D64879;
+    color: var(--secondary-color);
 }
 
 .nosotros__parrafo {

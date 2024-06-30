@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-    <link rel="stylesheet" href="../CSS/producto.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Cosas que no se ven a simple vista</title>
+    <link rel="stylesheet" href="../../css/producto.css">
+    <link rel="stylesheet" href="../../CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/png" href="../imgs/logoV.png">
+    <link rel="icon" type="image/png" href="../../imgs/logoV.png">
     <script src="https://kit.fontawesome.com/2b5178f0cc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main">
         <header class="navbar">
-            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="logo-TourBuddies">
-            </img>
+            <a href="index.html" target="_blank">
+                <img class="navbar__logo" src="../../imgs/logo-valkiria.png" alt="logo-Valkiria">
+                </img></a>
             <ul class="navbar__menu">
                 <li class="navbar__li">
                     <a class="navbar__a" href="index.html">Inicio</a>
@@ -39,12 +40,10 @@
                         <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
                     </ul>
                 </li>
-                <li class="navbar__li">
-                    <a class="dropdown__a" href="#">Blog</a>
-                </li>
+
                 <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#">Cerrar sesión</a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
-                            class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
+                            class="fa-solid fa-magnifying-glass" style="color: var(--secondary-color);"></i></a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
                             class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
             </ul>
@@ -52,26 +51,28 @@
         <main class="paginaproducto">
             <div class="producto">
                 <div class="producto__izquierda">
-                    <img src="../imgs/libros/Filstrup.png" alt="Filstrup" class="producto__imagen">
-                    <p class="producto__fragmento"><i class="fa-solid fa-book" style="color: #597cff;"></i> Leer un
-                        fragmento</p>
+                    <img src="../../imgs/libros/mundo/vista.png" alt="Cosas que no se ven a simple vista"
+                        class="producto__imagen">
+                    <p class="producto__fragmento"><i class="fa-solid fa-book" style="color: #597cff;"></i> <a
+                            href="https://algareditorial.com/tl_files/pdfs/fragments/9788491425656_FR.pdf"
+                            target="_blank">Leer un
+                            fragmento</a></p>
                 </div>
                 <div class="producto__info">
-                    <h1 class="producto__h1">Filstrup</h1>
-                    <h2 class="producto__autor">Autor</h2>
-                    <p class="producto__sinopsis">Soy Linus Filstrup, un chico honrado que no tiene nada que ver con
-                        Arlo, mi hermano gemelo, que es un auténtico mangante y el orgullo de los Filstrup, una familia
-                        de ladrones y estafadores como es debido. Yo iba tirando en el instituto, hasta el nefasto día
-                        en que me acusaron de haber robado una buena suma de dinero. Entonces tuve que ponerme a
-                        investigar para desenmascarar el verdadero culpable, limpiar mi nombre y... ¡Volver a
-                        decepcionar mi familia!</p>
+                    <h1 class="producto__h1">Cosas que no se ven a simple vista</h1>
+                    <h2 class="producto__autor">Pavla Hanáčková</h2>
+                    <p class="producto__sinopsis">Hay cosas tan pequeñas que no las podemos ver a simple vista, como por
+                        ejemplo las bacterias. Al mismo tiempo, hay otras tan grandes, como el sistema solar, que
+                        nuestro ojo no las puede alcanzar. También hay cosas que se nos escapan porque son demasiado
+                        rápidas o demasiado lentas o porque se esconden en la oscuridad o en el interior de las cosas.
+                    </p>
                     <div class="producto__detalles">
                         <ul class="detalles__lista">
-                            <li>ISBN: 9788491425960</li>
+                            <li>ISBN: 9788491425656</li>
                             <li>Encuadernación: Tapa dura</li>
-                            <li>Tamaño 15,5 x 23,5 cm:</li>
-                            <li>Edad recomendada: A partir de 10 años</li>
-                            <p>Precio: 13,95€</p>
+                            <li>Tamaño: 22 x 28 cm</li>
+                            <li>Edad recomendada: A partir de 4 años</li>
+                            <p>Precio: 15,95€</p>
                         </ul>
                         <button class="libro__masinfo"><a class="dropdown__a dropdown__carrito" href="#"><i
                                     class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a> Añadir al
@@ -85,7 +86,7 @@
                     <h2>¿Qué dice la prensa?</h2>
 
                     <div class="reviews__review">
-                        <img src="../imgs/foto-review-1.png" alt="Manuel-Garcia" class="review__foto">
+                        <img src="../../imgs/foto-review-1.png" alt="Manuel-Garcia" class="review__foto">
 
                         </img>
                         <div class="review__info">
@@ -98,25 +99,13 @@
                         </div>
                     </div>
 
-                    <div class="reviews__review">
-                        <img src="../imgs/foto-review-2.png" alt="Manuel-Garcia" class="review__foto">
 
-                        </img>
-                        <div class="review__info">
-                            <h3 class="review__nombre">Marcos López</h3>
-                            <p class="review__texto">Las novelas gráficas de Valkiria son una joya tanto para jóvenes
-                                como
-                                para
-                                adultos. Sus ilustraciones y los textos entrelazan humor y aventura. Además, abordan
-                                temas
-                                complejos de manera accesible, con personajes diversos y entrañables.</p>
-                        </div>
-                    </div>
                 </div>
+                <!-- Sección reviews-->
                 <div class="reviews__columna">
                     <h2 class="reviews__lectores">La opinión de los lectores</h2>
                     <div class="reviews__review">
-                        <img src="../imgs/foto-review-2.png" alt="Manuel-Garcia" class="review__foto">
+                        <img src="../../imgs/foto-review-2.png" alt="Manuel-Garcia" class="review__foto">
 
                         </img>
                         <div class="review__info">
@@ -129,20 +118,7 @@
                                 complejos de manera accesible, con personajes diversos y entrañables.</p>
                         </div>
                     </div>
-                    <div class="reviews__review">
-                        <img src="../imgs/foto-review-2.png" alt="Manuel-Garcia" class="review__foto">
 
-                        </img>
-                        <div class="review__info">
-                            <h3 class="review__nombre">Marcos López</h3>
-                            <p class="review__texto">Las novelas gráficas de Valkiria son una joya tanto para jóvenes
-                                como
-                                para
-                                adultos. Sus ilustraciones y los textos entrelazan humor y aventura. Además, abordan
-                                temas
-                                complejos de manera accesible, con personajes diversos y entrañables.</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -152,25 +128,25 @@
                 <h3 class="relacionados__h3">También te puede interesar...</h3>
                 <div class="relacionados">
 
-                    <div class="relacionados__libro"><img src="../imgs/libros/Filstrup.png" alt=""
+                    <div class="relacionados__libro"><img src="../../imgs/libros/Filstrup.png" alt=""
                             class="libro__portada">
                         <p class="libro__titulo">Colmillos</p>
                         <p class="libro__autor">Jacobo Feijóo</p>
                         <button class="libro__masinfo">Más información</button>
                     </div>
-                    <div class="relacionados__libro"><img src="../imgs/libros/Filstrup.png" alt=""
+                    <div class="relacionados__libro"><img src="../../imgs/libros/Filstrup.png" alt=""
                             class="libro__portada">
                         <p class="libro__titulo">Colmillos</p>
                         <p class="libro__autor">Jacobo Feijóo</p>
                         <button class="libro__masinfo">Más información</button>
                     </div>
-                    <div class="relacionados__libro"><img src="../imgs/libros/Filstrup.png" alt=""
+                    <div class="relacionados__libro"><img src="../../imgs/libros/Filstrup.png" alt=""
                             class="libro__portada">
                         <p class="libro__titulo">Colmillos</p>
                         <p class="libro__autor">Jacobo Feijóo</p>
                         <button class="libro__masinfo">Más información</button>
                     </div>
-                    <div class="relacionados__libro"><img src="../imgs/libros/Filstrup.png" alt=""
+                    <div class="relacionados__libro"><img src="../../imgs/libros/Filstrup.png" alt=""
                             class="libro__portada">
                         <p class="libro__titulo">Colmillos</p>
                         <p class="libro__autor">Jacobo Feijóo</p>

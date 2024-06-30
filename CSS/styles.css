@@ -8,6 +8,8 @@
 body {
     background-color: #E5E8F1;
     background-image: url('../imgs/fondo.png');
+    --primary-color: #597CFF;
+    --secondary-color: #D64879;
 }
 
 .main {
@@ -44,7 +46,8 @@ body {
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 3em 6em 1em 6em;
 }
 
 .navbar__logo {
@@ -67,21 +70,21 @@ body {
 
 .navbar__dropdown {
     position: relative;
-    /* display: none; */
+
 }
 
 .dropdown__ul {
-    display: none;
-    background-color: white;
+      
     position: absolute;
     min-width: 80px;
     text-wrap: nowrap;
     padding: 10px;
-    /* left: 0px;  ? */
-    /* top: 100%; ? */
     list-style-type: none;
     z-index: 2;
     border-radius: 10px;
+    height: 0;
+    transition: height .5s ease, background-color .5s ease;
+    overflow: hidden;
 }
 
 .dropdown__li {
@@ -90,22 +93,19 @@ body {
 
 }
 
-/*.navbar__dropdown:hover .dropdown-li {
-    display: block;
-} */
-
-/* no entiendo dónde poner el hover */
 .navbar__dropdown:hover .dropdown__ul {
     display: block;
     top: 25px;
+    height: 12em;
+    background-color: white;
 }
 
 .navbar__menu li:nth-child(even) a {
-    color: #3860f1;
+    color: var(--primary-color);
 }
 
 .navbar__menu li:nth-child(odd) a {
-    color: #D64879;
+    color: var(--secondary-color);
 }
 
 
@@ -139,21 +139,23 @@ body {
     background-color: white;
     width: 3em;
     height: 3em;
-    border-color: #597cff;
+    border-color: var(--primary-color);
     border-radius: 50px;
     margin: 0em 3em 0em 3em;
 }
 
+
+/* SECCIÓN GÉNEROS */
 .seccion__novedades {
     flex-grow: 2;
 }
-
 .seccion__generos {
     width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 2px;
+    gap: 0.5em;
+    padding: 1em;
 }
 
 .genero {
@@ -178,7 +180,6 @@ body {
     object-fit: contain;
     position: relative;
     right: 1em;
-
 }
 .genero__mundo {
     background: linear-gradient(90deg, rgba(207, 233, 187, 1) 6%, rgba(172, 237, 123, 1) 99%);
@@ -189,12 +190,21 @@ body {
     background: linear-gradient(90deg, rgba(250,187,153,1) 6%, rgba(255,159,70,1) 99%);
     color: #DD4605;
 }
+.genero__novela {
+    background: linear-gradient(90deg, rgba(244,207,255,1) 6%, rgba(230,148,255,1) 99%);
+}
+.genero__escolares {
+    background: linear-gradient(90deg, rgba(176,241,255,1) 6%, rgba(95,167,182,1) 99%);
+}
+.genero__albumes {
+    background: linear-gradient(90deg, rgba(167,223,255,1) 6%, rgba(56,182,255,1) 99%);
+}
 .novedades {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap: 3em 0em;
     padding: 15px;
     justify-items: center;
     align-items: center;
@@ -204,24 +214,32 @@ body {
 .libro__titulo {
     font-size: 1em;
     padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .libro__autor {
     font-size: 0.8em;
     padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 .libro__masinfo {
-    align-self: center;
     cursor: pointer;
-    background-color: #597CFF;
+    background-color: var(--primary-color);
     width: 10em;
     height: 3em;
-    border-color: #597CFF;
+    border-color: var(--primary-color);
     border-radius: 50px;
     color: white;
 }
-
+.libro__masinfo:hover, .libro__masinfo:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 .contenedor__botones {
     display: flex;
     justify-content: center;
@@ -231,16 +249,22 @@ body {
 .vendidos__h3,
 .recomendado__boton {
     font-size: 1.5em;
-    margin: 10px;
+    margin: 0em 2em;
 }
 
 .novedades__boton,
 .recomendado__boton {
-    border-color: #597CFF;
+    border-color: var(--secondary-color);
     padding: 0.5em;
-    background-color: rgba(255, 255, 255, 0.414);
+    background-color: #ffcdde;
     border-radius: 50px;
-    box-shadow: 24px 9px 78px -23px rgba(89, 124, 255, 1);
+    
+}
+
+.novedades__boton:hover, .recomendado__boton:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
 }
 
 .vendidos {
@@ -252,8 +276,9 @@ body {
 }
 
 .novedades__libro .libro__portada {
-    max-height: 220px;
-
+    max-height: 16em;
+    display: flex;
+    justify-content: center;
 }
 
 .vendidos__libro {
@@ -262,7 +287,7 @@ body {
 }
 
 .vendidos__libro .libro__portada {
-    height: 200px;
+    height: 15em;
 
 }
 
@@ -287,6 +312,10 @@ body {
 
 }
 
+.footer a {
+    text-decoration: none;
+    color: white;
+}
 
 @media only screen 
    and (max-width : 880px) {

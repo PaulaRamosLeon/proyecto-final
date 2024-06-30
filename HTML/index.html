@@ -46,10 +46,9 @@
                         <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
                     </ul>
                 </li>
-                <li class="navbar__li">
-                    <a class="dropdown__a" href="#">Blog</a>
-                </li>
-                <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#">Cerrar sesión</a></li>
+
+                <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#"><i
+                            class="fa-solid fa-user"></i></a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
                             class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
@@ -67,120 +66,128 @@
                     <img src="../imgs/banner-carton.png" alt="banner-carton" class="banner__imagen">
                 </div>
                 <div class="banner__botones">
-                <button class="banner__atras"><i class="fa-solid fa-arrow-left" style="color: #597cff;"></i></button>
-                <button class="banner__siguiente"><i class="fa-solid fa-arrow-right" style="color: #597cff;"></i></button>
-            </div>
-            </div>
-            <div class="contenedor__fila">
-                <div class="seccion__novedades">
-                    <div class="contenedor__botones">
-                        <button class="novedades__boton">Novedades</button>
-                        <button class="recomendado__boton">Recomendamos</button>
+                    <button class="banner__atras"><i class="fa-solid fa-arrow-left"
+                            style="color: #597cff;"></i></button>
+                    <button class="banner__siguiente"><i class="fa-solid fa-arrow-right"
+                            style="color: #597cff;"></i></button>
+                </div>
+                <!--Fin banner-->
+                <div class="contenedor__fila">
+                    <div class="seccion__novedades">
+                        <div class="contenedor__botones">
+                            <button class="novedades__boton">Novedades</button>
+                            <button class="recomendado__boton">Recomendamos</button>
+                        </div>
+                        <div class="novedades">
+                            <div class="novedades__libro">
+                                <img src="../imgs/libros/albumes/pacatac.png" alt="El día de los influencers vivientes" class="libro__portada">
+                                <p class="libro__titulo">¡Pacatac!</p>
+                                <p class="libro__autor">Anya Damirón</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="novedades__libro">
+                                <img src="../imgs/libros/novela/maltinez.png" alt="Los MALtínez" class="libro__portada">
+                                <p class="libro__titulo">Los MALtínez. Maldades en familia</p>
+                                <p class="libro__autor">Andrés Carrión</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="novedades__libro">
+                                <img src="../imgs/libros/novela/bruna.png" alt="" class="libro__portada">
+                                <p class="libro__titulo">Bruna la bruja y el tesoro de los gamusinos</p>
+                                <p class="libro__autor">Pasqual Alapont</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="novedades__libro">
+                                <img src="../imgs/libros/carton/arena.png" alt="Jugamos en la arena" class="libro__portada">
+                                <p class="libro__titulo">Jugamos en la arena</p>
+                                <p class="libro__autor">Ilan Brenman</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="novedades__libro">
+                                <img src="../imgs/libros/mundo/cazamitos.png" alt="Cazamitos" class="libro__portada">
+                                <p class="libro__titulo">Cazamitos</p>
+                                <p class="libro__autor">Altea Villa</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="novedades__libro">
+                                <img src="../imgs/libros/mundo/dragon.png" alt="" class="libro__portada">
+                                <p class="libro__titulo">Cómo ser tan aseado como un dragón</p>
+                                <p class="libro__autor">Štěpánka Sekaninová</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="novedades">
-                        <div class="novedades__libro">
-                            <img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                            <p class="libro__titulo">El Bosque Encantado</p>
-                            <p class="libro__autor">Alicia Thompson</p>
+                    <div class="seccion__generos">
+                        <div class="genero genero__carton">
+                            <h4 class="genero__h4">Libros de cartón</h4>
+                            <img src="../imgs/carton.png" alt="Libros de cartón" class="genero__imagen">
+                        </div>
+                        <div class="genero genero__mundo">
+                            <h4 class="genero__h4">Descubriendo el mundo</h4>
+                            <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
+                        </div>
+
+
+                        <div class="genero genero__escolares">
+                            <h4 class="genero__h4">Libros escolares</h4>
+                            <img src="../imgs/escolares.png" alt="Descubriendo el mundo" class="genero__imagen">
+                        </div>
+                        <div class="genero genero__novela">
+                            <h4 class="genero__h4">Novela ilustrada</h4>
+                            <img src="../imgs/novela.png" alt="Descubriendo el mundo" class="genero__imagen">
+                        </div>
+                        <div class="genero genero__albumes">
+                            <h4 class="genero__h4">Álbumes ilustrados</h4>
+                            <img src="../imgs/albumes.png" alt="Descubriendo el mundo" class="genero__imagen">
+                        </div>
+                    </div>
+                </div>
+                <div class="seccion__vendidos">
+                    <h3 class="vendidos__h3">Los más vendidos</h3>
+                    <div class="vendidos">
+                        <div class="vendidos__libro"><img src="../imgs/libros/albumes/minimoni.png" alt="¿Qué será eso del amor, Minimoni?"
+                                class="libro__portada">
+                            <p class="libro__titulo">¿Qué será eso del amor, Minimoni?</p>
+                            <p class="libro__autor">Rocio Bonilla</p>
                             <button class="libro__masinfo">Más información</button>
                         </div>
-                        <div class="novedades__libro">
-                            <img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                            <p class="libro__titulo">Misterio de la Casa</p>
-                            <p class="libro__autor">Juan Stevenson</p>
+                        <div class="vendidos__libro"><img src="../imgs/libros/carton/bebe.png" alt="¿Qué te pasa, bebé?"
+                                class="libro__portada">
+                            <p class="libro__titulo">¿Qué te pasa, bebé?</p>
+                            <p class="libro__autor">Bea Taboada</p>
                             <button class="libro__masinfo">Más información</button>
                         </div>
-                        <div class="novedades__libro">
-                            <img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                            <p class="libro__titulo">Viaje a lo Desconocido</p>
-                            <p class="libro__autor">Emma Wilson</p>
-                            <button class="libro__masinfo">Más información</button>
-                        </div>
-                        <div class="novedades__libro">
-                            <img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                            <p class="libro__titulo">El Susurro Silencioso</p>
-                            <p class="libro__autor">Miguel Reed</p>
-                            <button class="libro__masinfo">Más información</button>
-                        </div>
-                        <div class="novedades__libro">
-                            <img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                            <p class="libro__titulo">Ecos del Pasado</p>
-                            <p class="libro__autor">Sofía Clark</p>
-                            <button class="libro__masinfo">Más información</button>
-                        </div>
-                        <div class="novedades__libro">
-                            <img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                            <p class="libro__titulo">La Frontera Final</p>
+                        <div class="vendidos__libro"><img src="../imgs/libros/mundo/dinosaurios.png" alt="Top Ten. Los diez dinosaurios más peligrosos"
+                                class="libro__portada">
+                            <p class="libro__titulo">Top Ten. Los diez dinosaurios más peligrosos</p>
                             <p class="libro__autor">David Johnson</p>
                             <button class="libro__masinfo">Más información</button>
                         </div>
-                    </div>
-                </div>
-                <div class="seccion__generos">
-                    
-                    <div class="genero genero__mundo">
-                        <h4 class="genero__h4">Descubriendo el mundo</h4>
-                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
-                    </div>
-                    <div class="genero genero__carton">
-                        <h4 class="genero__h4">Libros de cartón</h4>
-                        <img src="../imgs/carton.png" alt="Libros de cartón" class="genero__imagen">
-                    </div>
-                    <div class="genero genero__novela">
-                        <h4 class="genero__h4">Novela ilustrada</h4>
-                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
-                    </div>
-                    <div class="genero genero__escolares">
-                        <h4 class="genero__h4">Libros escolares</h4>
-                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
-                    </div>
-                    <div class="genero genero__albumes">
-                        <h4 class="genero__h4">Álbumes ilustrados</h4>
-                        <img src="../imgs/mundo-genero.png" alt="Descubriendo el mundo" class="genero__imagen">
-                    </div>
-                </div>
-            </div>
-            <div class="seccion__vendidos">
-                <h3 class="vendidos__h3">Los más vendidos</h3>
-                <div class="vendidos">
-                    <div class="vendidos__libro"><img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                        <p class="libro__titulo">La Frontera Final</p>
-                        <p class="libro__autor">David Johnson</p>
-                        <button class="libro__masinfo">Más información</button>
-                    </div>
-                    <div class="vendidos__libro"><img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                        <p class="libro__titulo">La Frontera Final</p>
-                        <p class="libro__autor">David Johnson</p>
-                        <button class="libro__masinfo">Más información</button>
-                    </div>
-                    <div class="vendidos__libro"><img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                        <p class="libro__titulo">La Frontera Final</p>
-                        <p class="libro__autor">David Johnson</p>
-                        <button class="libro__masinfo">Más información</button>
-                    </div>
-                    <div class="vendidos__libro"><img src="../imgs/libros/Filstrup.png" alt="" class="libro__portada">
-                        <p class="libro__titulo">La Frontera Final</p>
-                        <p class="libro__autor">David Johnson</p>
-                        <button class="libro__masinfo">Más información</button>
-                    </div>
+                        <div class="vendidos__libro"><img src="../imgs/libros/novela/colmillos.png" alt="Colmillos. Misterio en Necrontia"
+                                class="libro__portada">
+                            <p class="libro__titulo">Colmillos. Misterio en Necrontia</p>
+                            <p class="libro__autor">Jacobo Feijóo</p>
+                            <button class="libro__masinfo">Más información</button>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
 
         </section>
         <footer class="footer">
             <div class="footer__redes">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-x-twitter"></i>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
             </div>
-            <div class="footer__politica">
-                <p>Política de privacidad</p>
-                <p>Política de cookies</p>
+            <div class="footer__nosotros">
+                <a href="./nosotros.html">
+                    Sobre nosotros</a></p>
             </div>
             <div class="footer__informacion">
-                <p>Sobre nosotros</p>
-                <p>Términos y condiciones</p>
+                <p>
+                    
+                <p><a href="./tyc.html">Términos y condiciones</a></p>
             </div>
         </footer>
     </div>

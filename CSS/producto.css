@@ -29,6 +29,7 @@
 
 .producto__autor {
     margin: 20px;
+    font-size: 1em;
 }
 
 .detalles__lista {
@@ -36,8 +37,8 @@
 }
 .libro__comprar {
     cursor: pointer;
-    background-color: #597CFF;
-    border-color: #597CFF;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
     color: white;
     border-radius: 50px;
     margin-top: 1rem;
@@ -78,7 +79,10 @@
     margin-top: 1em;
     padding: 0.5rem;
 }
-
+.producto__fragmento a {
+    text-decoration: none;
+    color: black;
+}
 /*ESTILO REVIEWS*/
 
 .reviews {
@@ -127,7 +131,7 @@
 
 
 .review__nombre {
-    color: #D64879;
+    color: var(--secondary-color);
     margin-bottom: 10px;
     font-family: Sansita;
     font-size: 25px;

@@ -29,18 +29,13 @@
     
     justify-content: space-evenly;
 }
-.catalogo__libro .libro__titulo {
 
-}
-.catalogo__libro .libro__autor {
-
-}
 .catalogo__libro .libro__comprar {
     width: 8rem;
-    border-color: #597CFF;
+    border-color: var(--primary-color);
     align-self: center;
     cursor: pointer;
-    background-color: #597CFF;
+    background-color: var(--primary-color);
     border-radius: 50px;
     height: 3em;
     width: 4.5rem;
@@ -64,7 +59,7 @@ padding-top: 1rem;
 .paginacion__botones {font-weight: bold;
     width: 3rem;
     height: 2rem;
-    border-color: #597CFF;
+    border-color: var(--primary-color);
     border-radius: 50px;
     cursor: pointer;
     background-color: #f5f5fd98;
