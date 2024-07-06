@@ -31,10 +31,6 @@
                 <li class="navbar__li">
                     <a class="navbar__a" href="index.html">Inicio</a>
                 </li>
-                <li class="navbar__li">
-                    <a class="navbar__a" href="perfil-user.html">Mi perfil</a>
-                </li>
-
 
                 <li class="navbar__dropdown navbar__li">
                     <a class="dropdown__a" href="catalogo.html">Catálogo</a>
@@ -46,9 +42,7 @@
                         <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
                     </ul>
                 </li>
-                <li class="navbar__li">
-                    <a class="dropdown__a" href="#">Blog</a>
-                </li>
+
                 <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#">Cerrar sesión</a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
                             class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
@@ -64,42 +58,43 @@
 
 
                 <div class="cesta__producto">
-                    <img src="../imgs/libros/Filstrup.png" alt="" class="producto__img">
+                    <img src="../imgs/libros/albumes/minimoni.png" alt="" class="producto__img">
                     <div class="producto__info">
                         <p class="producto__titulo">Filstrup</p>
                         <div class="producto__cantidad">
-                            <p class="cantidad__valor">Cantidad: 2</p>
+                            <p>Cantidad: <span class="cantidad__valor">2</span></p>
                             <button class="cantidad__boton">-</button>
                             <button class="cantidad__boton">+</button>
                         </div>
-                        <p class="producto__precio">Precio: 20€</p>
+                        <p class="producto__precio">Precio: <span class="precio">20</span>€</p>
                     </div>
                 </div>
                 <div class="cesta__producto">
-                    <img src="../imgs/libros/Filstrup.png" alt="" class="producto__img">
+                    <img src="../imgs/libros/escolares/billyjoe.png" alt="" class="producto__img">
                     <div class="producto__info">
                         <p class="producto__titulo">Filstrup</p>
                         <div class="producto__cantidad">
-                            <p class="cantidad__valor">Cantidad: 2</p>
+                            <p>Cantidad: <span class="cantidad__valor">2</span></p>
                             <button class="cantidad__boton">-</button>
                             <button class="cantidad__boton">+</button>
                         </div>
-                        <p class="producto__precio">Precio: 20€</p>
+                        <p class="producto__precio">Precio: <span class="precio">20</span>€</p>
                     </div>
                 </div>
                 <div class="cesta__producto">
-                    <img src="../imgs/libros/Filstrup.png" alt="" class="producto__img">
+                    <img src="../imgs/libros/novela/bruna.png" alt="" class="producto__img">
                     <div class="producto__info">
                         <p class="producto__titulo">Filstrup</p>
                         <div class="producto__cantidad">
-                            <p class="cantidad__valor">Cantidad: 2</p>
+                            <p>Cantidad: <span class="cantidad__valor">2</span></p>
                             <button class="cantidad__boton">-</button>
                             <button class="cantidad__boton">+</button>
                         </div>
-                        <p class="producto__precio">Precio: 20€</p>
+                        <p class="producto__precio">Precio: <span class="precio">20</span>€</p>
                     </div>
                 </div>
-                <button class="cesta__boton">Pagar</button>
+                <h3 class="cesta__h3">Total: <span class="cesta__total">0</span>€</h3>
+                <button class="cesta__boton"><a href="/HTML/pago.html"> Pagar</a></button>
             </div>
 
 
@@ -109,26 +104,26 @@
                 <div class="recomendados">
                     <h3 class="recomendados__h3">También te puede interesar...</h3>
                     <div class="recomendados__libro">
-                        <img src="../imgs/libros/Filstrup.png" alt="" class="producto__img">
+                        <img src="../imgs/libros/carton/arena.png" alt="Jugamos en la arena" class="producto__img">
                         <div class="recomendados__datos">
-                            <p class="recomendados__titulo">La Frontera Final</p>
-                            <p class="recomendados__autor">David Johnson</p>
+                            <p class="recomendados__titulo">Jugamos en la arena</p>
+                            <p class="recomendados__autor">Ilan Brenman</p>
                             <button class="recomendados__boton">Más información</button>
                         </div>
                     </div>
                     <div class="recomendados__libro">
-                        <img src="../imgs/libros/Filstrup.png" alt="" class="producto__img">
+                        <img src="../imgs/libros/mundo/espacio.png" alt="De la tierra al espacio" class="producto__img">
                         <div class="recomendados__datos">
-                            <p class="recomendados__titulo">La Frontera Final</p>
-                            <p class="recomendados__autor">David Johnson</p>
+                            <p class="recomendados__titulo">De la tierra al espacio</p>
+                            <p class="recomendados__autor">Pavla Hanáčková</p>
                             <button class="recomendados__boton">Más información</button>
                         </div>
                     </div>
                     <div class="recomendados__libro">
-                        <img src="../imgs/libros/Filstrup.png" alt="" class="producto__img">
+                        <img src="../imgs/libros/novela/filstrup.png" alt="Bruna la bruja y el tesoro de los gamusinos" class="producto__img">
                         <div class="recomendados__datos">
-                            <p class="recomendados__titulo">La Frontera Final</p>
-                            <p class="recomendados__autor">David Johnson</p>
+                            <p class="recomendados__titulo">Filstrup</p>
+                            <p class="recomendados__autor">Óscar Julve</p>
                             <button class="recomendados__boton">Más información</button>
                         </div>
                     </div>
@@ -154,7 +149,7 @@
             </div>
         </footer>
     </div>
-
+<script src="../JavaScript/carrito.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valkiria - Catálogo</title>
+    <title>Valkiria - Buscador</title>
     <!-- roboto-->
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -25,17 +25,13 @@
     <div class="main">
         <!--Aquí empieza el header-->
         <header class="navbar">
-            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="logo-TourBuddies">
+            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="Logo Valkiria">
             </img>
             <ul class="navbar__menu">
                 <li class="navbar__li">
                     <a class="navbar__a" href="index.html">Inicio</a>
                 </li>
-                <li class="navbar__li">
-                    <a class="navbar__a" href="perfil-user.html">Mi perfil</a>
-                </li>
-
-
+             
                 <li class="navbar__dropdown navbar__li">
                     <a class="dropdown__a" href="#">Catálogo</a>
                     <ul class="dropdown__ul">
@@ -46,14 +42,21 @@
                         <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
                     </ul>
                 </li>
-                <li class="navbar__li">
-                    <a class="dropdown__a" href="#">Blog</a>
+
+                <li class="navbar__dropdown--usuario navbar__li"><i class="fa-solid fa-user"></i>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a href="#">Cerrar sesión</a></li>
+                    </ul>
                 </li>
-                <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#">Cerrar sesión</a></li>
+
+
+                <input type="text" class="buscador__input" id="inputTitulo" placeholder="Buscar por título" autofocus>
+
                 <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
-                            class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
+                            class="fa-solid fa-magnifying-glass" style="color: var(--secondary-color);"></i></a></li>
+
                 <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
-                            class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                            class="fa-sharp fa-solid fa-cart-shopping" style="color: var(--primary-color)"></i></a></li>
             </ul>
         </header>
         <!--Aquí acaba el header-->
@@ -94,7 +97,7 @@
                 <div class="catalogo__libro">
                     <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
                     <p class="libro__titulo">El Susurro Silencioso</p>
-                    <p class="libro__autor">Luis Reed</p>
+                    <p class="libro__autor">Miguel Reed</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo">Más información</button>
                         <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
@@ -153,16 +156,6 @@
                 </div>
             </div>
 
-            <div class="paginacion">
-                <button class="paginacion__botones"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="paginacion__botones">1</button>
-                <button class="paginacion__botones">2</button>
-                <button class="paginacion__botones">3</button>
-                <button class="paginacion__botones"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-
-
-
         </section>
         <footer class="footer">
             <div class="footer__redes">
@@ -178,7 +171,7 @@
                 <p>Sobre nosotros</p>
                 <p>Términos y condiciones</p>
             </div>
-
+            <script src="../JavaScript/buscador.js"></script>
         </footer>
 
     </div>

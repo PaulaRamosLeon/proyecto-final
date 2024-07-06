@@ -48,6 +48,7 @@ body {
     font-weight: bold;
     justify-content: space-between;
     padding: 3em 6em 1em 6em;
+    margin: 0em 0em 2em 0em;
 }
 
 .navbar__logo {
@@ -65,10 +66,10 @@ body {
     display: flex;
     gap: 20px;
     list-style-type: none;
-
+    align-items: center;
 }
 
-.navbar__dropdown {
+.navbar__dropdown--catalogo, .navbar__dropdown--usuario {
     position: relative;
 
 }
@@ -90,10 +91,9 @@ body {
 .dropdown__li {
     text-decoration: none;
     padding: 8px;
-
 }
 
-.navbar__dropdown:hover .dropdown__ul {
+.navbar__dropdown--catalogo:hover .dropdown__ul {
     display: block;
     top: 25px;
     height: 12em;
@@ -108,8 +108,25 @@ body {
     color: var(--secondary-color);
 }
 
+.navbar__dropdown--usuario:hover .dropdown__ul {
+    display: block;
+    top: 25px;
+    height: 3em;
+    background-color: white;
 
-
+}
+.buscador__input {
+    border: 1px solid var(--secondary-color);
+    background-color: #ffbdd4ce;
+    color: black;
+    padding: 4px;
+    border-radius: 0.3em;
+}
+.buscador__input::placeholder {
+    color: rgb(36, 36, 36);
+    opacity: 1;
+    
+}
 /*FIN ESTILOS DEL HEADER*/
 
 /* ESTILOS BANNER */
@@ -146,7 +163,7 @@ body {
 
 
 /* SECCIÓN GÉNEROS */
-.seccion__novedades {
+.inicio__secciones{
     flex-grow: 2;
 }
 .seccion__generos {
@@ -199,7 +216,8 @@ body {
 .genero__albumes {
     background: linear-gradient(90deg, rgba(167,223,255,1) 6%, rgba(56,182,255,1) 99%);
 }
-.novedades {
+
+.contenedor__novedades, .contenedor__recomendados {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -235,9 +253,8 @@ body {
     border-radius: 50px;
     color: white;
 }
-.libro__masinfo:hover, .libro__masinfo:hover {
-    background-color: white;
-    color: var(--primary-color);
+.libro__masinfo:hover, .libro__comprar:hover {
+    background-color: #bac9ff;
     border-color: var(--primary-color);
 }
 .contenedor__botones {
@@ -245,23 +262,26 @@ body {
     justify-content: center;
 }
 
-.novedades__boton,
-.vendidos__h3,
-.recomendado__boton {
+.vendidos__h3 {
     font-size: 1.5em;
     margin: 0em 2em;
 }
 
-.novedades__boton,
-.recomendado__boton {
+.novedades__boton--btnInactivo,
+.recomendado__boton--btnInactivo,
+.novedades__boton--btnActivo, 
+.recomendado__boton--btnActivo {
     border-color: var(--secondary-color);
     padding: 0.5em;
     background-color: #ffcdde;
     border-radius: 50px;
     
+    font-size: 1.5em;
+    margin: 0em 2em;
 }
 
-.novedades__boton:hover, .recomendado__boton:hover {
+.novedades__boton--btnInactivo:hover, .recomendado__boton--btnInactivo:hover, 
+.novedades__boton--btnActivo, .recomendado__boton--btnActivo {
     background-color: var(--secondary-color);
     color: white;
     border-color: var(--secondary-color);
@@ -275,15 +295,25 @@ body {
     justify-content: space-evenly;
 }
 
-.novedades__libro .libro__portada {
+.inicio__libro .libro__portada {
     max-height: 16em;
     display: flex;
     justify-content: center;
 }
 
+.inicio__libro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .vendidos__libro {
     margin-left: 2rem;
     margin-right: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .vendidos__libro .libro__portada {
@@ -291,7 +321,10 @@ body {
 
 }
 
-
+.cesta__boton a {
+    text-decoration: none;
+    color: white;
+}
 
 /*ESTILOS FOOTER*/
 .footer {

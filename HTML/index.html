@@ -31,27 +31,25 @@
                 <li class="navbar__li">
                     <a class="navbar__a" href="index.html">Inicio</a>
                 </li>
-                <li class="navbar__li">
-                    <a class="navbar__a" href="perfil-user.html">Mi perfil</a>
-                </li>
-
-
-                <li class="navbar__dropdown navbar__li">
-                    <a class="dropdown__a" href="catalogo.html">Catálogo</a>
+                <li class="navbar__dropdown--catalogo navbar__li">
+                    <a class="navbar__a" href="catalogo.html">Catálogo</a>
                     <ul class="dropdown__ul">
-                        <li class="dropdown__li"> <a href="#"></a>> Descubriendo el mundo</a></li>
-                        <li class="dropdown__li"> <a href="#"></a>> Novela ilustrada</a></li>
-                        <li class="dropdown__li"> <a href="#"></a>> Libros de cartón</a></li>
-                        <li class="dropdown__li"> <a href="#"></a>> Libros escolares</a></li>
-                        <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
+                        <li class="dropdown__li"> <a href="#">> Descubriendo el mundo</a></li>
+                        <li class="dropdown__li"> <a href="#">> Novela ilustrada</a></li>
+                        <li class="dropdown__li"> <a href="#">> Libros de cartón</a></li>
+                        <li class="dropdown__li"> <a href="#">> Libros escolares</a></li>
+                        <li class="dropdown__li"> <a href="#">> Álbumes ilustrados</a></li>
                     </ul>
                 </li>
 
-                <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#"><i
-                            class="fa-solid fa-user"></i></a></li>
-                <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
+                <li class="navbar__dropdown--usuario navbar__li"><i class="fa-solid fa-user"></i>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
                             class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
-                <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
+                <li class="navbar__li"> <a class="navbar__a" href="#"><i
                             class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </header>
@@ -73,43 +71,86 @@
                 </div>
                 <!--Fin banner-->
                 <div class="contenedor__fila">
-                    <div class="seccion__novedades">
+                    <div class="inicio__secciones">
                         <div class="contenedor__botones">
-                            <button class="novedades__boton">Novedades</button>
-                            <button class="recomendado__boton">Recomendamos</button>
+                            <button class="novedades__boton--btnInactivo" id="novedades__boton">Novedades</button>
+                            <button class="recomendado__boton--btnInactivo"
+                                id="recomendado__boton">Recomendamos</button>
                         </div>
-                        <div class="novedades">
-                            <div class="novedades__libro">
-                                <img src="../imgs/libros/albumes/pacatac.png" alt="El día de los influencers vivientes" class="libro__portada">
+                        <div class="contenedor__novedades">
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/albumes/pacatac.png" alt="El día de los influencers vivientes"
+                                    class="libro__portada">
                                 <p class="libro__titulo">¡Pacatac!</p>
                                 <p class="libro__autor">Anya Damirón</p>
                                 <button class="libro__masinfo">Más información</button>
                             </div>
-                            <div class="novedades__libro">
+                            <div class="inicio__libro">
                                 <img src="../imgs/libros/novela/maltinez.png" alt="Los MALtínez" class="libro__portada">
                                 <p class="libro__titulo">Los MALtínez. Maldades en familia</p>
                                 <p class="libro__autor">Andrés Carrión</p>
                                 <button class="libro__masinfo">Más información</button>
                             </div>
-                            <div class="novedades__libro">
+                            <div class="inicio__libro">
                                 <img src="../imgs/libros/novela/bruna.png" alt="" class="libro__portada">
                                 <p class="libro__titulo">Bruna la bruja y el tesoro de los gamusinos</p>
                                 <p class="libro__autor">Pasqual Alapont</p>
                                 <button class="libro__masinfo">Más información</button>
                             </div>
-                            <div class="novedades__libro">
-                                <img src="../imgs/libros/carton/arena.png" alt="Jugamos en la arena" class="libro__portada">
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/carton/arena.png" alt="Jugamos en la arena"
+                                    class="libro__portada">
                                 <p class="libro__titulo">Jugamos en la arena</p>
                                 <p class="libro__autor">Ilan Brenman</p>
                                 <button class="libro__masinfo">Más información</button>
                             </div>
-                            <div class="novedades__libro">
+                            <div class="inicio__libro">
                                 <img src="../imgs/libros/mundo/cazamitos.png" alt="Cazamitos" class="libro__portada">
                                 <p class="libro__titulo">Cazamitos</p>
                                 <p class="libro__autor">Altea Villa</p>
                                 <button class="libro__masinfo">Más información</button>
                             </div>
-                            <div class="novedades__libro">
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/mundo/dragon.png" alt="" class="libro__portada">
+                                <p class="libro__titulo">Cómo ser tan aseado como un dragón</p>
+                                <p class="libro__autor">Štěpánka Sekaninová</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                        </div>
+                        <div class="contenedor__recomendados">
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/albumes/mandril.png" alt="El día de los influencers vivientes"
+                                    class="libro__portada">
+                                <p class="libro__titulo">¡Pacatac!</p>
+                                <p class="libro__autor">Anya Damirón</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/novela/maltinez.png" alt="Los MALtínez" class="libro__portada">
+                                <p class="libro__titulo">Los MALtínez. Maldades en familia</p>
+                                <p class="libro__autor">Andrés Carrión</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/novela/bruna.png" alt="" class="libro__portada">
+                                <p class="libro__titulo">Bruna la bruja y el tesoro de los gamusinos</p>
+                                <p class="libro__autor">Pasqual Alapont</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/carton/arena.png" alt="Jugamos en la arena"
+                                    class="libro__portada">
+                                <p class="libro__titulo">Jugamos en la arena</p>
+                                <p class="libro__autor">Ilan Brenman</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="inicio__libro">
+                                <img src="../imgs/libros/mundo/cazamitos.png" alt="Cazamitos" class="libro__portada">
+                                <p class="libro__titulo">Cazamitos</p>
+                                <p class="libro__autor">Altea Villa</p>
+                                <button class="libro__masinfo">Más información</button>
+                            </div>
+                            <div class="inicio__libro">
                                 <img src="../imgs/libros/mundo/dragon.png" alt="" class="libro__portada">
                                 <p class="libro__titulo">Cómo ser tan aseado como un dragón</p>
                                 <p class="libro__autor">Štěpánka Sekaninová</p>
@@ -141,12 +182,13 @@
                             <img src="../imgs/albumes.png" alt="Descubriendo el mundo" class="genero__imagen">
                         </div>
                     </div>
+
                 </div>
                 <div class="seccion__vendidos">
                     <h3 class="vendidos__h3">Los más vendidos</h3>
                     <div class="vendidos">
-                        <div class="vendidos__libro"><img src="../imgs/libros/albumes/minimoni.png" alt="¿Qué será eso del amor, Minimoni?"
-                                class="libro__portada">
+                        <div class="vendidos__libro"><img src="../imgs/libros/albumes/minimoni.png"
+                                alt="¿Qué será eso del amor, Minimoni?" class="libro__portada">
                             <p class="libro__titulo">¿Qué será eso del amor, Minimoni?</p>
                             <p class="libro__autor">Rocio Bonilla</p>
                             <button class="libro__masinfo">Más información</button>
@@ -157,14 +199,14 @@
                             <p class="libro__autor">Bea Taboada</p>
                             <button class="libro__masinfo">Más información</button>
                         </div>
-                        <div class="vendidos__libro"><img src="../imgs/libros/mundo/dinosaurios.png" alt="Top Ten. Los diez dinosaurios más peligrosos"
-                                class="libro__portada">
+                        <div class="vendidos__libro"><img src="../imgs/libros/mundo/dinosaurios.png"
+                                alt="Top Ten. Los diez dinosaurios más peligrosos" class="libro__portada">
                             <p class="libro__titulo">Top Ten. Los diez dinosaurios más peligrosos</p>
                             <p class="libro__autor">David Johnson</p>
                             <button class="libro__masinfo">Más información</button>
                         </div>
-                        <div class="vendidos__libro"><img src="../imgs/libros/novela/colmillos.png" alt="Colmillos. Misterio en Necrontia"
-                                class="libro__portada">
+                        <div class="vendidos__libro"><img src="../imgs/libros/novela/colmillos.png"
+                                alt="Colmillos. Misterio en Necrontia" class="libro__portada">
                             <p class="libro__titulo">Colmillos. Misterio en Necrontia</p>
                             <p class="libro__autor">Jacobo Feijóo</p>
                             <button class="libro__masinfo">Más información</button>
@@ -178,7 +220,7 @@
             <div class="footer__redes">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
             </div>
             <div class="footer__nosotros">
                 <a href="./nosotros.html">
@@ -186,13 +228,14 @@
             </div>
             <div class="footer__informacion">
                 <p>
-                    
+
                 <p><a href="./tyc.html">Términos y condiciones</a></p>
             </div>
+
         </footer>
     </div>
 
-
+    <script src="../JavaScript/botonesinicio.js"></script>
 </body>
 
 </html>
