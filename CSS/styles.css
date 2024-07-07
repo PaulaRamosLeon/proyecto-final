@@ -6,8 +6,6 @@
 }
 
 body {
-    background-color: #E5E8F1;
-    background-image: url('../imgs/fondo.png');
     --primary-color: #597CFF;
     --secondary-color: #D64879;
 }
@@ -15,15 +13,40 @@ body {
 .main {
 
     border-radius: 25px;
-    border: 5px solid white;
+    border: 5px solid var(--secondary-color);
     display: flex;
     flex-direction: column;
     margin: 2rem 8rem 2rem 8rem;
     background-color: #f5f5fd98;
 }
 
+.dialog{
+    margin: auto;
+    z-index: 10;
+    border: none;
+    position: fixed;
+}
 
-
+.dialog__contenedor {
+    align-items: center;
+    padding: 7em;
+    border: 5px solid var(--secondary-color);
+    border-radius: 25px;
+    background-color:white;
+    flex-direction: column;
+}
+.dialog__btn {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    font-size: large;
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 0.5em;
+    background-color: white;
+    font-weight: bold;
+    cursor:pointer;
+}
 .contenedor {
 
     display: flex;
@@ -89,10 +112,11 @@ body {
 }
 
 .dropdown__li {
-    text-decoration: none;
     padding: 8px;
 }
-
+.dropdown__li a{
+    text-decoration: none;
+}
 .navbar__dropdown--catalogo:hover .dropdown__ul {
     display: block;
     top: 25px;

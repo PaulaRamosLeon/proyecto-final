@@ -25,7 +25,7 @@
     <div class="main">
         <!--Aquí empieza el header-->
         <header class="navbar">
-            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="logo-Valkiria">
+            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="Logo Valkiria">
             </img>
             <ul class="navbar__menu">
                 <li class="navbar__li">
@@ -42,9 +42,9 @@
                     </ul>
                 </li>
 
-                <li class="navbar__dropdown--usuario navbar__li"><i class="fa-solid fa-user"></i>
+                <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
                     <ul class="dropdown__ul">
-                        <li class="dropdown__li"> <a href="#">Cerrar sesión</a></li>
+                        <li class="dropdown__li"> <a id="dropdown__sesion" href="#">Cerrar sesión</a></li>
                     </ul>
                 </li>
                 <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
@@ -54,8 +54,14 @@
             </ul>
         </header>
         <!--Aquí acaba el header-->
-
         <section class="contenedor">
+            <dialog class="dialog">
+                <div class="dialog__contenedor">
+                    <button class="dialog__btn">X</button>
+                    <h1>Has cerrado la sesión</h1>
+                    <p>¡Vuelve pronto!</p>
+                </div>
+            </dialog>
             <!--Inicio banner-->
             <div class="banner">
                 <div class="banner__imagenes">
@@ -236,6 +242,7 @@
     </div>
 
     <script src="../JavaScript/botonesinicio.js"></script>
+    <script src="../JavaScript/cerrarsesion.js"></script>
 </body>
 
 </html>

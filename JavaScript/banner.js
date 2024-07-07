@@ -44,8 +44,7 @@ function actualizarSlider() {
    //const width = 400; // el ancho de mi slider
    const width = sliderImages.clientWidth;
     sliderImages.style.transform = `translateX(${-width * imgIndex}px)`;
-    console.log(`translateX(${-width * imgIndex}px)`);
-    console.log(sliderImages);
+
 
 }
 
