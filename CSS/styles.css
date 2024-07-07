@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     margin: 2rem 8rem 2rem 8rem;
     background-color: #f5f5fd98;
+    overflow: hidden;
 }
 
 .dialog{
@@ -58,6 +59,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*ESTILOS DEL HEADER*/
@@ -75,6 +77,10 @@ body {
 
 .navbar__logo {
     height: 4em;
+}
+
+.navbar__hamburguesa{
+    display: none;
 }
 
 .navbar__a,
@@ -185,11 +191,12 @@ body {
 
 /* SECCIÓN GÉNEROS */
 .inicio__secciones{
-    flex-grow: 2;
+    flex: 70;
 }
 .seccion__generos {
-    min-width: 30em;
+    max-width: 40em;
     display: flex;
+    flex: 20 1 auto;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 0.5em;
@@ -314,6 +321,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .inicio__libro .libro__portada {
@@ -338,7 +346,7 @@ body {
 }
 
 .vendidos__libro .libro__portada {
-    height: 15em;
+    max-height: 15em;
 
 }
 
@@ -357,7 +365,6 @@ body {
     justify-items: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.745);
-    border-radius: 0px 0px 25px 25px;
 }
 
 .footer__redes i {
@@ -372,7 +379,7 @@ body {
 }
 
 /* Media queries para pantallas pequeñas */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     .main {
         margin: 1em 1em;
     }
@@ -390,7 +397,16 @@ body {
         height: 80px;
     }
 
+    .navbar__hamburguesa{
+        display: block;
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        padding: 3em;
+    }
+
     .navbar__menu {
+        display: none;
         margin: 2em;
         flex-direction: column;
         gap: 2em;
@@ -433,6 +449,11 @@ body {
     .contenedor__novedades, .contenedor__recomendados {
         grid-template-columns: 1fr;
     }
+    
+.inicio__libro .libro__portada, 
+.vendidos__libro .libro__portada {
+    max-height: 30em;
+}
 
     .vendidos {
         flex-direction: column;
