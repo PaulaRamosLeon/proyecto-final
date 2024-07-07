@@ -65,19 +65,16 @@ body {
 
 .navbar {
     display: flex;
-    height: 5rem;
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;
     justify-content: space-between;
-    padding: 3em 6em 1em 6em;
+    padding: 1em 6em 1em 6em;
     margin: 0em 0em 2em 0em;
 }
 
 .navbar__logo {
-    height: 100px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    height: 4em;
 }
 
 .navbar__a,
@@ -191,7 +188,7 @@ body {
     flex-grow: 2;
 }
 .seccion__generos {
-    width: 30em;
+    min-width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -374,13 +371,74 @@ body {
     color: white;
 }
 
-@media only screen 
-   and (max-width : 880px) {
-   .main{
-    margin: 1em 1em 1em 1em;
-   }
+/* Media queries para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .main {
+        margin: 1em 1em;
+    }
 
-   .navbar__menu{
-    display: none;
-   }
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 2em;
+        font-size: larger;
+        margin:0em;
+    }
+
+    .navbar__logo {
+        height: 80px;
+    }
+
+    .navbar__menu {
+        margin: 2em;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .banner__imagenes {
+        height: 15em;
+    }
+
+    .banner__botones {
+        top: -10em;
+    }
+
+    .seccion__generos {
+        width: 100%;
+    }
+
+    .novedades__boton--btnInactivo,
+    .recomendado__boton--btnInactivo,
+    .novedades__boton--btnActivo, 
+    .recomendado__boton--btnActivo {
+        font-size: 1em;
+        margin: 1em; 
+    }
+
+    .genero {
+        align-items: center;
+        height: auto;
+        padding: 1em;
+    }
+
+    .genero__imagen {
+        width: 7em;
+        max-width: 30%;
+    }
+    .genero__h4{
+        max-width: 60%;
+    }
+
+    .contenedor__novedades, .contenedor__recomendados {
+        grid-template-columns: 1fr;
+    }
+
+    .vendidos {
+        flex-direction: column;
+    }
+    .footer{
+        padding:1em;
+        grid-template-columns: 1fr;
+    }
 }
