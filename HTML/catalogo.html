@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valkiria - Catálogo</title>
-    <!-- roboto-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/2b5178f0cc.js" crossorigin="anonymous"></script>
     <!--MONTSERRAT-->
@@ -31,11 +27,6 @@
                 <li class="navbar__li">
                     <a class="navbar__a" href="index.html">Inicio</a>
                 </li>
-                <li class="navbar__li">
-                    <a class="navbar__a" href="perfil-user.html">Mi perfil</a>
-                </li>
-
-
                 <li class="navbar__dropdown navbar__li">
                     <a class="dropdown__a" href="#">Catálogo</a>
                     <ul class="dropdown__ul">
@@ -46,10 +37,12 @@
                         <li class="dropdown__li"> <a href="#"></a>> Álbumes ilustrados</a></li>
                     </ul>
                 </li>
-                <li class="navbar__li">
-                    <a class="dropdown__a" href="#">Blog</a>
+
+                <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a id="dropdown__sesion" href="#">Cerrar sesión</a></li>
+                    </ul>
                 </li>
-                <li class="navbar__li"> <a class="dropdown__a dropdown__sesion" href="#">Cerrar sesión</a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
                             class="fa-solid fa-magnifying-glass" style="color: #597cff;"></i></a></li>
                 <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
@@ -61,94 +54,298 @@
             <h3 class="catalogo__h3">Catálogo</h3>
             <div class="catalogo">
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/escolares/futbol.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">El Bosque Encantado</p>
-                    <p class="libro__autor">Alicia Thompson</p>
+                    <a href="./productos/filstrup.html"><img src="../imgs/libros/novela/filstrup.png" alt="Filstrup"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">Filstrup</p>
+                    <p class="libro__autor">Óscar Julve</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/filstrup.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
+
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">Misterio de la Casa</p>
-                    <p class="libro__autor">Juan Stevenson</p>
+                    <a href="./productos/minimoni.html"><img src="../imgs/libros/albumes/minimoni.png"
+                            alt="¿Qué será eso del amor, Minimoni?" class="libro__portada"></a>
+                    <p class="libro__titulo">¿Qué será eso del amor, Minimoni?</p>
+                    <p class="libro__autor">Rocío Bonilla</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/minimoni.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
 
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/escolares/futbol.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">Viaje a lo Desconocido</p>
-                    <p class="libro__autor">Emma Wilson</p>
+                    <a href="./productos/topten.html"><img src="../imgs/libros/mundo/dinosaurios.png"
+                            alt="Top Ten. Los diez dinosaurios más peligrosos" class="libro__portada"></a>
+                    <p class="libro__titulo">Top Ten. Los diez dinosaurios más peligrosos</p>
+                    <p class="libro__autor">Cristina Banfi</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/topten.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">El Susurro Silencioso</p>
-                    <p class="libro__autor">Luis Reed</p>
+                    <a href="./productos/cazamitos.html"><img src="../imgs/libros/mundo/cazamitos.png"
+                            alt="Cazamitos. ¡Ponte a prueba contra las noticias falsas!" class="libro__portada"></a>
+                    <p class="libro__titulo">Cazamitos. ¡Ponte a prueba contra las noticias falsas!</p>
+                    <p class="libro__autor">Altea Villa</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/cazamitos.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/escolares/futbol.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">Ecos del Pasado</p>
-                    <p class="libro__autor">Sofía Clark</p>
+                    <a href="./productos/dragon.html"><img src="../imgs/libros/mundo/dragon.png"
+                            alt="Cómo ser tan aseado como un dragón" class="libro__portada"></a>
+                    <p class="libro__titulo">Cómo ser tan aseado como un dragón</p>
+                    <p class="libro__autor">Štěpánka Sekaninová</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/dragon.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">La Frontera Final</p>
-                    <p class="libro__autor">David Johnson</p>
+                    <a href="./productos/espacio.html"><img src="../imgs/libros/mundo/espacio.png"
+                            alt="De la tierra al espacio" class="libro__portada"></a>
+                    <p class="libro__titulo">De la tierra al espacio</p>
+                    <p class="libro__autor">Pavla Hanáčková</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/espacio.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">El Susurro Silencioso</p>
-                    <p class="libro__autor">Miguel Reed</p>
+                    <a href="./productos/cosas.html"><img src="../imgs/libros/mundo/vista.png"
+                            alt="Cosas que no se ven a simple vista" class="libro__portada"></a>
+                    <p class="libro__titulo">Cosas que no se ven a simple vista</p>
+                    <p class="libro__autor">Pavla Hanáčková</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/cosas.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">Ecos del Pasado</p>
-                    <p class="libro__autor">Sofía Clark</p>
+                    <a href="./productos/unioneuropea.html"><img src="../imgs/libros/mundo/unioneuropea.png"
+                            alt="¿Qué es la Unión Europea?" class="libro__portada"></a>
+                    <p class="libro__titulo">¿Qué es la Unión Europea?</p>
+                    <p class="libro__autor">Pedro Riera</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/unioneuropea.html">Más
+                                información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <img src="../imgs/libros/albumes/fuga.png" alt="" class="libro__portada">
-                    <p class="libro__titulo">La Frontera Final</p>
-                    <p class="libro__autor">David Johnson</p>
+                    <a href="./productos/lafuga.html"><img src="../imgs/libros/albumes/fuga.png" alt="La fuga"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">La fuga</p>
+                    <p class="libro__autor">Cristina Oleby</p>
                     <div class="catalogo__botones">
-                        <button class="libro__masinfo">Más información</button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"
-                                style="color: #ffffff;"></i></button>
+                        <button class="libro__masinfo"><a href="./productos/lafuga.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/truenos.html"><img src="../imgs/libros/albumes/truenos.png"
+                            alt="A veces mamá tiene truenos en la cabeza" class="libro__portada"></a>
+                    <p class="libro__titulo">A veces mamá tiene truenos en la cabeza</p>
+                    <p class="libro__autor">Bea Taboada</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/truenos.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/monstruo.html"><img src="../imgs/libros/albumes/monstruo.png"
+                            alt="El monstruo del armario existe... ¡y te lo voy a demostrar!"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">El monstruo del armario existe... ¡y te lo voy a demostrar!</p>
+                    <p class="libro__autor">Antoine Dole</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/monstruo.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/pacatac.html"><img src="../imgs/libros/albumes/pacatac.png" alt="¡Pacatac!"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">¡Pacatac!</p>
+                    <p class="libro__autor">Anya Damirón</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/pacatac.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/colmillos.html"><img src="../imgs/libros/novela/colmillos.png"
+                            alt="Colmillos. Misterio en Necrontia" class="libro__portada"></a>
+                    <p class="libro__titulo">Colmillos. Misterio en Necrontia</p>
+                    <p class="libro__autor">Jacobo Feijóo</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/colmillos.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/nubes.html"><img src="../imgs/libros/novela/nubes.png"
+                            alt="Una habitación en las nubes" class="libro__portada"></a>
+                    <p class="libro__titulo">Una habitación en las nubes</p>
+                    <p class="libro__autor">Teresa Broseta y Patricia Campos</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/nubes.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/animales.html"><img src="../imgs/libros/carton/animales.png"
+                            alt="Animales del campo" class="libro__portada"></a>
+                    <p class="libro__titulo">Animales del campo</p>
+                    <p class="libro__autor">Guido van Genechten</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/animales.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/arena.html"><img src="../imgs/libros/carton/arena.png"
+                            alt="Jugamos en la arena" class="libro__portada"></a>
+                    <p class="libro__titulo">Jugamos en la arena</p>
+                    <p class="libro__autor">Ilan Brenman</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/arena.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/babymoni.html"><img src="../imgs/libros/carton/babymoni.png"
+                            alt="Hola Babymoni" class="libro__portada"></a>
+                    <p class="libro__titulo">Hola Babymoni</p>
+                    <p class="libro__autor">Rocio Bonilla</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/babymoni.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/princesas.html"><img src="../imgs/libros/carton/princesas.png"
+                            alt="Las princesas (pequeñas) también se tiran pedos" class="libro__portada"></a>
+                    <p class="libro__titulo">Las princesas (pequeñas) también se tiran pedos</p>
+                    <p class="libro__autor">Ilan Brenman</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/princesas.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/beso.html"><img src="../imgs/libros/carton/beso.png"
+                            alt="¿De qué color es un beso?" class="libro__portada"></a>
+                    <p class="libro__titulo">¿De qué color es un beso?</p>
+                    <p class="libro__autor">Rocio Bonilla</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/beso.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/bebe.html"><img src="../imgs/libros/carton/bebe.png" alt="¿Qué te pasa bebé?"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">¿Qué te pasa bebé?</p>
+                    <p class="libro__autor">Bea Taboada</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/bebe.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/influencers.html"><img src="../imgs/libros/novela/influencers.png"
+                            alt="El día de los influencers vivientes" class="libro__portada"></a>
+                    <p class="libro__titulo">El día de los influencers vivientes</p>
+                    <p class="libro__autor">Loopy Teller Studio</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/influencers.html">Más
+                                información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/bruna.html"><img src="../imgs/libros/novela/bruna.png"
+                            alt="Bruna la bruja y el tesoro de los gamusinos" class="libro__portada"></a>
+                    <p class="libro__titulo">Bruna la bruja y el tesoro de los gamusinos</p>
+                    <p class="libro__autor">Pasqual Alapont</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/bruna.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/maltinez.html"><img src="../imgs/libros/novela/maltinez.png"
+                            alt="Los MALtínez. Maldades en familia" class="libro__portada"></a>
+                    <p class="libro__titulo">Los MALtínez. Maldades en familia</p>
+                    <p class="libro__autor">Andrés Carrión</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/maltinez.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/maria.html"><img src="../imgs/libros/escolares/futbol.png"
+                            alt="María Fútbol Club" class="libro__portada"></a>
+                    <p class="libro__titulo">María Fútbol Club</p>
+                    <p class="libro__autor">José Carlos Andrés</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/maria.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/olas.html"><img src="../imgs/libros/escolares/olas.png"
+                            alt="El día que las olas del mar entraron en mi barriga" class="libro__portada"></a>
+                    <p class="libro__titulo">El día que las olas del mar entraron en mi barriga</p>
+                    <p class="libro__autor">Cinta Arasa</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/olas.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/jano.html"><img src="../imgs/libros/escolares/jano.png"
+                            alt="Jano salva el mundo" class="libro__portada"></a>
+                    <p class="libro__titulo">Jano salva el mundo</p>
+                    <p class="libro__autor">Lola Llatas</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/jano.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/billyjoe.html"><img src="../imgs/libros/escolares/billyjoe.png"
+                            alt="Billy Joe y los robots comeantena" class="libro__portada"></a>
+                    <p class="libro__titulo">Billy Joe y los robots comeantenas</p>
+                    <p class="libro__autor">David Redín</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/billyjoe.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/ka.html"><img src="../imgs/libros/escolares/ka.png" alt="Me llamo Ka"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">Me llamo Ka</p>
+                    <p class="libro__autor">Daniel Hernández</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/ka.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/abuela.html"><img src="../imgs/libros/escolares/abuela.png"
+                            alt="Una abuela hecha de versos" class="libro__portada"></a>
+                    <p class="libro__titulo">Una abuela hecha de versos</p>
+                    <p class="libro__autor">Carmen Aznar</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/abuela.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
             </div>
@@ -166,17 +363,18 @@
         </section>
         <footer class="footer">
             <div class="footer__redes">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-x-twitter"></i>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
             </div>
-            <div class="footer__politica">
-                <p>Política de privacidad</p>
-                <p>Política de cookies</p>
+            <div class="footer__nosotros">
+                <a href="./nosotros.html">
+                    Sobre nosotros</a></p>
             </div>
             <div class="footer__informacion">
-                <p>Sobre nosotros</p>
-                <p>Términos y condiciones</p>
+                <p>
+
+                <p><a href="./tyc.html">Términos y condiciones</a></p>
             </div>
 
         </footer>
