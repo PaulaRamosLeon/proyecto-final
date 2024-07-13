@@ -30,11 +30,6 @@ body {
     display: none;
 }
 
-.navbar__a,
-.dropdown__a {
-    text-decoration: none;
-}
-
 .navbar__menu {
     display: flex;
     gap: 20px;
@@ -219,10 +214,14 @@ body {
 }
 
 .genero__h4 {
-    
     font-size: 1.8em;
     position: relative;
     top: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .genero__imagen {
@@ -240,14 +239,19 @@ body {
     background: linear-gradient(90deg, rgba(250,187,153,1) 6%, rgba(255,159,70,1) 99%);
     color: #DD4605;
 }
-.genero__novela {
-    background: linear-gradient(90deg, rgba(244,207,255,1) 6%, rgba(230,148,255,1) 99%);
-}
 .genero__escolares {
+    color: #023742;
     background: linear-gradient(90deg, rgba(176,241,255,1) 6%, rgba(95,167,182,1) 99%);
 }
+    
+.genero__novela {
+    color: #61037d;
+    background: linear-gradient(90deg, rgba(244,207,255,1) 6%, rgba(230,148,255,1) 99%);
+}
+
 .genero__albumes {
     background: linear-gradient(90deg, rgba(167,223,255,1) 6%, rgba(56,182,255,1) 99%);
+    color: #0a1d3d;
 }
 
 .contenedor__novedades, .contenedor__recomendados {
@@ -287,13 +291,11 @@ body {
     color: white;
     margin: 0 2rem;
 }
-.libro__masinfo a {
-    text-decoration: none;
-    color: white;
-}
+
 .fa-cart-shopping {
     color: white;
 }
+
 
 .navbar__a .fa-cart-shopping, .dropdown__a .fa-cart-shopping {
 color: var(--secondary-color);
@@ -370,10 +372,7 @@ color: var(--secondary-color);
 
 }
 
-.cesta__boton a {
-    text-decoration: none;
-    color: white;
-}
+
 /* ESTILOS CARRITO*/
 .cesta {
     background-color: none;
@@ -678,10 +677,6 @@ padding: 20px;
 
 }
 
-.footer a {
-    text-decoration: none;
-    color: white;
-}
 
 /* Media queries para pantallas pequeñas */
 @media (max-width: 1000px) {
