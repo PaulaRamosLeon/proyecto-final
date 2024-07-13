@@ -285,6 +285,8 @@ body {
     border-color: var(--primary-color);
     border-radius: 50px;
     color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
     
 }
 .libro__masinfo a {
@@ -294,10 +296,18 @@ body {
 .fa-cart-shopping {
     color: white;
 }
+
+.navbar__a .fa-cart-shopping, .dropdown__a .fa-cart-shopping {
+color: var(--secondary-color);
+}
+.fa-magnifying-glass {
+    color: var(--primary-color);
+}
 .libro__masinfo:hover, .libro__comprar:hover {
     background-color: #bac9ff;
     border-color: var(--primary-color);
 }
+
 .contenedor__botones {
     display: flex;
     justify-content: center;

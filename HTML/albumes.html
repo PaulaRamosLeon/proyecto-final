@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valkiria - Álbumes ilustrados</title>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/2b5178f0cc.js" crossorigin="anonymous"></script>
+    <!--MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/catalogo.css">
+    <link rel="icon" type="image/png" href="../imgs/logoV.png">
+</head>
+
+<body>
+    <div class="main">
+        <!--Aquí empieza el header-->
+        <header class="navbar">
+            <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="Logo Valkiria">
+            </img>
+            <button class="navbar__hamburguesa"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navbar__menu">
+                <li class="navbar__li">
+                    <a class="navbar__a" href="#">Inicio</a>
+                </li>
+                <li class="navbar__dropdown--catalogo navbar__li">
+                    <a class="navbar__a" href="./catalogo.html">Catálogo</a>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a href="./descubriendoelmundo.html">> Descubriendo el mundo</a></li>
+                        <li class="dropdown__li"> <a href="./novela.html">> Novela ilustrada</a></li>
+                        <li class="dropdown__li"> <a href="./carton.html">> Libros de cartón</a></li>
+                        <li class="dropdown__li"> <a href="./escolares.html">> Libros escolares</a></li>
+                        <li class="dropdown__li"> <a href="#">> Álbumes ilustrados</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a id="dropdown__sesion" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
+                            class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="navbar__li"> <a class="navbar__a" href="./carrito.html"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </header>
+        <!--Aquí acaba el header-->
+        <section class="catalogo__contenedor">
+            <h3 class="catalogo__h3">Álbumes ilustrados</h3>
+            <div class="catalogo">
+                
+
+                <div class="catalogo__libro">
+                    <a href="./productos/minimoni.html"><img src="../imgs/libros/albumes/minimoni.png"
+                            alt="¿Qué será eso del amor, Minimoni?" class="libro__portada"></a>
+                    <p class="libro__titulo">¿Qué será eso del amor, Minimoni?</p>
+                    <p class="libro__autor">Rocío Bonilla</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/minimoni.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+
+                </div>
+                
+                <div class="catalogo__libro">
+                    <a href="./productos/lafuga.html"><img src="../imgs/libros/albumes/fuga.png" alt="La fuga"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">La fuga</p>
+                    <p class="libro__autor">Cristina Oleby</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/lafuga.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/truenos.html"><img src="../imgs/libros/albumes/truenos.png"
+                            alt="A veces mamá tiene truenos en la cabeza" class="libro__portada"></a>
+                    <p class="libro__titulo">A veces mamá tiene truenos en la cabeza</p>
+                    <p class="libro__autor">Bea Taboada</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/truenos.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/monstruo.html"><img src="../imgs/libros/albumes/monstruo.png"
+                            alt="El monstruo del armario existe... ¡y te lo voy a demostrar!"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">El monstruo del armario existe...</p>
+                    <p class="libro__autor">Antoine Dole</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/monstruo.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/pacatac.html"><img src="../imgs/libros/albumes/pacatac.png" alt="¡Pacatac!"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">¡Pacatac!</p>
+                    <p class="libro__autor">Anya Damirón</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/pacatac.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="catalogo__libro">
+                    <a href="./productos/mandril.html"><img src="../imgs/libros/albumes/mandril.png" alt="Mandril"
+                            class="libro__portada"></a>
+                    <p class="libro__titulo">Mandril</p>
+                    <p class="libro__autor">Anya Damirón</p>
+                    <div class="catalogo__botones">
+                        <button class="libro__masinfo"><a href="./productos/mandril.html">Más información</a></button>
+                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                
+                
+
+        </section>
+               <!--Aquí empieza el footer-->
+               <footer class="footer">
+                <div class="footer__redes">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footer__nosotros">
+                    <p><a href="./nosotros.html">
+                        Sobre nosotros</a></p>
+                </div>
+                <div class="footer__informacion">
+                    <p>
+    
+                    <p><a href="./tyc.html">Términos y condiciones</a></p>
+                </div>
+    
+            </footer>
+    </div>
+</body>
+
+</html>

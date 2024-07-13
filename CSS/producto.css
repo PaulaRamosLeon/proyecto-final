@@ -22,7 +22,7 @@
 .producto__izquierda {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
+    margin: 0 0 0 10rem;
     align-items: center;
     gap: 20px;
 }
@@ -41,7 +41,7 @@
     border-color: var(--primary-color);
     color: white;
     border-radius: 50px;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 .producto__detalles .libro__comprar {
     width: 14rem;
@@ -61,12 +61,11 @@
 }
 
 .producto__info {
-    margin-left: 10rem;
-    margin-top: 5rem;
+    margin: 5rem 0 0 10rem;
 }
 
 .producto__sinopsis{
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
 }
 .producto__detalles {
     display: flex;
@@ -74,9 +73,10 @@
     justify-content: space-evenly;
 }
 .producto__fragmento {
+    /* border: 1px 0 1px 0 solid grey;*/
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    margin-top: 1em;
+    margin: 1em 0;
     padding: 0.5rem;
 }
 .producto__fragmento a {
@@ -86,11 +86,11 @@
 /*ESTILO REVIEWS*/
 
 .reviews {
-    padding-top: 3rem;
+    margin: 2rem 0;
     display: flex;   
     flex-direction: row;
     justify-items: center;
-    padding-bottom: 3rem;   
+    padding: 0 0 3rem 0;
 }
 .reviews__columna{
     display: flex;
@@ -120,19 +120,18 @@
 }
 .review__foto {
     border-radius: 50%;
-    border-color: #3860f1;
+    border-color: var(--primary-color);
     border-style: solid;
     border-width: 5px;
     width: 150px;
     height: 150px;
-    margin-left: 20px;
-
+    margin: 0 0 0 20px;
 }
 
 
 .review__nombre {
     color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-family: Sansita;
     font-size: 25px;
 }
@@ -148,13 +147,12 @@ p {
 }
 
 .relacionados {
-    background-color: green;
     width: 100%;
     padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 .novedades__libro .libro__portada {
@@ -163,11 +161,12 @@ p {
 }
 
 .relacionados__libro {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background-color: red;
+    margin: 0 2rem;
 }
-
+.relacionados__libro a {
+    text-decoration: none;
+    color: black;
+}
 .relacionados__libro .libro__portada {
     height: 200px;
 

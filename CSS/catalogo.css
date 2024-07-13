@@ -46,11 +46,10 @@
 .paginacion {
 display: flex;
 justify-content: flex-end;
-padding-right: 9rem;
+padding: 0 9rem 0 0;
 gap: 2px;
 padding-bottom: 1rem;
 padding-top: 1rem;
-
 
 }
 .paginacion__botones {font-weight: bold;
