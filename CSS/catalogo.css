@@ -58,3 +58,8 @@ gap: 2px;
     cursor: pointer;
     background-color: #f5f5fd98;
 }
+
+.boton__activo {
+    color: white;
+    background-color: var(--primary-color);
+}
