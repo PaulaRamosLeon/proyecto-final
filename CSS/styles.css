@@ -264,7 +264,7 @@ body {
 
 .libro__titulo {
     font-size: 1em;
-    padding-bottom: 8px;
+    padding: 0 0 8px 0;
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -272,7 +272,7 @@ body {
 
 .libro__autor {
     font-size: 0.8em;
-    padding-bottom: 8px;
+    padding: 0 0 8px 0;
     display: flex;
     justify-content: center;
 }
@@ -285,9 +285,7 @@ body {
     border-color: var(--primary-color);
     border-radius: 50px;
     color: white;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    
+    margin: 0 2rem;
 }
 .libro__masinfo a {
     text-decoration: none;
@@ -360,8 +358,7 @@ color: var(--secondary-color);
     text-align: center;
 }
 .vendidos__libro {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -482,9 +479,7 @@ padding: 20px;
 
 
 .recomendados__libro {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    
+    margin: 0 2rem;
     display: flex;
     
 }
@@ -617,9 +612,8 @@ padding: 20px;
     border-radius: 20px;
     color: white;
     width: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 15px 5px 15px;
+    margin: 0 auto;
+    padding: 5px 15px;
 }
 /* ESTILOS TÉRMINOS Y CONDICIONES*/
 .tyc {
