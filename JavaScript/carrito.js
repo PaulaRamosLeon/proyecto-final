@@ -32,7 +32,7 @@ function cargarDesdeLocalStorage(){
     carrito.forEach(producto => {
         cestaInfo.innerHTML = `
         <div class="cesta__producto">
-            <img src="${producto.img}" alt="Filstrup" class="producto__img">
+            <img src="${producto.img}" alt="${producto.titulo}" class="producto__img">
             <div class="producto__info">
                 <p class="producto__titulo">${producto.titulo}</p>
                 <div class="producto__cantidad">

@@ -32,7 +32,7 @@
                 <li class="navbar__li">
                     <a class="navbar__a" href="index.html">Inicio</a>
                 </li>
-             
+
                 <li class="navbar__dropdown navbar__li">
                     <a class="dropdown__a" href="#">Catálogo</a>
                     <ul class="dropdown__ul">
@@ -52,16 +52,24 @@
 
 
                 <input type="text" class="buscador__input" id="inputTitulo" placeholder="Buscar por título" autofocus>
-
+                <!--BUSCADOR DE LOS LIBROS-->
                 <li class="navbar__li"> <a class="dropdown__a dropdown__buscar" href="#"><i
                             class="fa-solid fa-magnifying-glass"></i></a></li>
-
-                <li class="navbar__li"> <a class="dropdown__a dropdown__carrito" href="#"><i
+                <!--FIN BUSCADOR-->
+                <li class="navbar__li"> <a class="navbar__a" href="./carrito.html"><i
                             class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </header>
         <!--Aquí acaba el header-->
+        <!--CATÁLOGO-->
         <section class="catalogo__contenedor">
+            <dialog class="dialog">
+                <div class="dialog__contenedor">
+                    <button class="dialog__btn">X</button>
+                    <h1>Has cerrado la sesión</h1>
+                    <p>¡Vuelve pronto!</p>
+                </div>
+            </dialog>
             <h3 class="catalogo__h3">Catálogo</h3>
             <div class="catalogo">
                 <div class="catalogo__libro">
@@ -71,7 +79,9 @@
                     <p class="libro__autor">Óscar Julve</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/filstrup.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Filstrup" data-precio="13.95"
+                            data-img="../imgs/libros/novela/filstrup.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
 
@@ -82,7 +92,9 @@
                     <p class="libro__autor">Rocío Bonilla</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/minimoni.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¿Qué será eso del amor, Minimoni?"
+                            data-precio="17.50" data-img="../imgs/libros/albumes/minimoni.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
 
                 </div>
@@ -93,7 +105,9 @@
                     <p class="libro__autor">Cristina Banfi</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/topten.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Top Ten. Los diez dinosaurios más peligrosos"
+                            data-precio="17.50" data-img="../imgs/libros/mundo/dinosaurios.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -103,7 +117,9 @@
                     <p class="libro__autor">Altea Villa</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/cazamitos.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Cazamitos" data-precio="16.50"
+                            data-img="../imgs/libros/mundo/cazamitos.png"><i
+                                    class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -113,7 +129,9 @@
                     <p class="libro__autor">Štěpánka Sekaninová</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/dragon.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¡Cómo ser tan aseado como un dragón!"
+                            data-precio="14.70" data-img="../imgs/libros/mundo/dragon.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -123,7 +141,9 @@
                     <p class="libro__autor">Pavla Hanáčková</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/espacio.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="De la tierra al espacio" data-precio="15.70"
+                            data-img="../imgs/libros/mundo/espacio.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -144,7 +164,9 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/unioneuropea.html">Más
                                 información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¿Qué es la Unión Europea?" data-precio="17.55"
+                            data-img="../imgs/libros/mundo/unioneuropea.png"><i
+                                    class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -360,8 +382,8 @@
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <a href="./productos/mandril.html"><img src="../imgs/libros/albumes/mandril.png"
-                            alt="Mandril" class="libro__portada"></a>
+                    <a href="./productos/mandril.html"><img src="../imgs/libros/albumes/mandril.png" alt="Mandril"
+                            class="libro__portada"></a>
                     <p class="libro__titulo">Mandril</p>
                     <p class="libro__autor">Anya Damirón</p>
                     <div class="catalogo__botones">
@@ -372,28 +394,29 @@
             </div>
 
         </section>
-                <!--Aquí empieza el footer-->
-                <footer class="footer">
-                    <div class="footer__redes">
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="footer__nosotros">
-                        <p><a href="./nosotros.html">
-                            Sobre nosotros</a></p>
-                    </div>
-                    <div class="footer__informacion">
-                        <p>
-        
-                        <p><a href="./tyc.html">Términos y condiciones</a></p>
-                    </div>
-        
-                </footer>
+        <!--Aquí empieza el footer-->
+        <footer class="footer">
+            <div class="footer__redes">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="footer__nosotros">
+                <p><a href="./nosotros.html">
+                        Sobre nosotros</a></p>
+            </div>
+            <div class="footer__informacion">
+                <p>
+
+                <p><a href="./tyc.html">Términos y condiciones</a></p>
+            </div>
+
+        </footer>
     </div>
-<script src="../JavaScript/buscador.js"></script>
-<script src="../../JavaScript/menuhamburguesa.js"></script>
+    <script src="../JavaScript/buscador.js"></script>
+    <script src="../../JavaScript/menuhamburguesa.js"></script>
     <script src="../../JavaScript/cerrarsesion.js"></script>
+    <script src="../../JavaScript/addtocart.js"></script>
 </body>
 
 </html>

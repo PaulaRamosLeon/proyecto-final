@@ -52,7 +52,15 @@
             </ul>
         </header>
         <!--Aquí acaba el header-->
+        <!--PRIMERA PÁGINA DEL CATÁLOGO-->
         <section class="catalogo__contenedor">
+            <dialog class="dialog">
+                <div class="dialog__contenedor">
+                    <button class="dialog__btn">X</button>
+                    <h1>Has cerrado la sesión</h1>
+                    <p>¡Vuelve pronto!</p>
+                </div>
+            </dialog>
             <h3 class="catalogo__h3">Catálogo</h3>
             <div class="catalogo">
                 <div class="catalogo__libro">
@@ -62,7 +70,8 @@
                     <p class="libro__autor">Óscar Julve</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/filstrup.html">Más información</a></button>
-                        <button class="libro__comprar" data-titulo="Filstrup" data-precio="20" data-img="../imgs/libros/novela/filstrup.png">
+                        <button class="libro__comprar" data-titulo="Filstrup" data-precio="13.95"
+                            data-img="../imgs/libros/novela/filstrup.png">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -75,7 +84,9 @@
                     <p class="libro__autor">Rocío Bonilla</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/minimoni.html">Más información</a></button>
-                        <button class="libro__comprar" data-titulo="¿Qué será eso del amor, Minimoni?" data-precio="15" data-img="../imgs/libros/albumes/minimoni.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¿Qué será eso del amor, Minimoni?"
+                            data-precio="17.50" data-img="../imgs/libros/albumes/minimoni.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
 
                 </div>
@@ -86,7 +97,9 @@
                     <p class="libro__autor">Cristina Banfi</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/topten.html">Más información</a></button>
-                        <button class="libro__comprar" data-titulo="Top Ten. Los diez dinosaurios más peligrosos" data-precio="17" data-img="../imgs/libros/mundo/dinosaurios.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Top Ten. Los diez dinosaurios más peligrosos"
+                            data-precio="17.50" data-img="../imgs/libros/mundo/dinosaurios.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -96,7 +109,9 @@
                     <p class="libro__autor">Altea Villa</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/cazamitos.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Cazamitos" data-precio="16.50"
+                            data-img="../imgs/libros/mundo/cazamitos.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -106,7 +121,9 @@
                     <p class="libro__autor">Štěpánka Sekaninová</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/dragon.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¡Cómo ser tan aseado como un dragón!"
+                            data-precio="14.70" data-img="../imgs/libros/mundo/dragon.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -116,7 +133,9 @@
                     <p class="libro__autor">Pavla Hanáčková</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/espacio.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="De la tierra al espacio" data-precio="15.70"
+                            data-img="../imgs/libros/mundo/espacio.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -126,7 +145,9 @@
                     <p class="libro__autor">Pavla Hanáčková</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/cosas.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Cosas que no se ven a simple vista"
+                            data-precio="15.95" data-img="../imgs/libros/mundo/cosas.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -137,7 +158,9 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/unioneuropea.html">Más
                                 información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¿Qué es la Unión Europea?" data-precio="17.55"
+                            data-img="../imgs/libros/mundo/unioneuropea.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -147,12 +170,13 @@
                     <p class="libro__autor">Cristina Oleby</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/lafuga.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="La fuga" data-precio="17.50"
+                        data-img="../imgs/libros/albumes/fuga.png"><i class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
             </div>
             <div class="paginacion">
-                
+
                 <button class="paginacion__botones boton__activo">1</button>
                 <button class="paginacion__botones">2</button>
                 <button class="paginacion__botones">3</button>
@@ -183,7 +207,7 @@
         </footer>
 
     </div>
-<script src="../../JavaScript/menuhamburguesa.js"></script>
+    <script src="../../JavaScript/menuhamburguesa.js"></script>
     <script src="../../JavaScript/cerrarsesion.js"></script>
     <script src="../../JavaScript/addtocart.js"></script>
 </body>

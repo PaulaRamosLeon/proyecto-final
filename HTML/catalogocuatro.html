@@ -52,11 +52,19 @@
             </ul>
         </header>
         <!--Aquí acaba el header-->
+        <!--CUARTA PÁGINA DEL CATÁLOGO-->
         <section class="catalogo__contenedor">
+            <dialog class="dialog">
+                <div class="dialog__contenedor">
+                    <button class="dialog__btn">X</button>
+                    <h1>Has cerrado la sesión</h1>
+                    <p>¡Vuelve pronto!</p>
+                </div>
+            </dialog>
             <h3 class="catalogo__h3">Catálogo</h3>
             <div class="catalogo">
 
-                
+
                 <div class="catalogo__libro">
                     <a href="./productos/ka.html"><img src="../imgs/libros/escolares/ka.png" alt="Me llamo Ka"
                             class="libro__portada"></a>
@@ -64,7 +72,9 @@
                     <p class="libro__autor">Daniel Hernández</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/ka.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Me llamo Ka" data-precio="10.50"
+                            data-img="../imgs/libros/escolares/ka.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -74,17 +84,21 @@
                     <p class="libro__autor">Carmen Aznar</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/abuela.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Una abuela hecha de versos" data-precio="10.95"
+                            data-img="../imgs/libros/escolares/abuela.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
-                    <a href="./productos/mandril.html"><img src="../imgs/libros/albumes/mandril.png"
-                            alt="Mandril" class="libro__portada"></a>
+                    <a href="./productos/mandril.html"><img src="../imgs/libros/albumes/mandril.png" alt="Mandril"
+                            class="libro__portada"></a>
                     <p class="libro__titulo">Mandril</p>
                     <p class="libro__autor">Anya Damirón</p>
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/mandril.html">Más información</a></button>
-                        <button class="libro__comprar"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="Mandril" data-precio="17.55"
+                            data-img="../imgs/libros/albumes/mandril.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
             </div>
@@ -120,8 +134,9 @@
         </footer>
 
     </div>
-<script src="../../JavaScript/menuhamburguesa.js"></script>
+    <script src="../../JavaScript/menuhamburguesa.js"></script>
     <script src="../../JavaScript/cerrarsesion.js"></script>
+    <script src="../../JavaScript/addtocart.js"></script>
 </body>
 
 </html>

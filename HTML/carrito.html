@@ -57,20 +57,16 @@
         <!--Aquí acaba el header-->
         <!--Aquí empieza la cesta-->
         <section class="cesta">
+            <dialog class="dialog">
+                <div class="dialog__contenedor">
+                    <button class="dialog__btn">X</button>
+                    <h1>Has cerrado la sesión</h1>
+                    <p>¡Vuelve pronto!</p>
+                </div>
+            </dialog>
             <h1 class="cesta__h1">Tu cesta</h1>
             <div class="cesta__info">
-                <div class="cesta__producto">
-                    <img src="../imgs/libros/novela/filstrup.png" alt="Filstrup" class="producto__img">
-                    <div class="producto__info">
-                        <p class="producto__titulo">Filstrup</p>
-                        <div class="producto__cantidad">
-                            <p>Cantidad: <span class="cantidad__valor">2</span></p>
-                            <button class="cantidad__boton">-</button>
-                            <button class="cantidad__boton">+</button>
-                        </div>
-                        <p class="producto__precio">Precio: <span class="precio">13.95</span>€</p>
-                    </div>
-                </div>
+                
                 <div class="cesta__producto">
                     <img src="../imgs/libros/carton/babymoni.png" alt="Hola Babymoni" class="producto__img">
                     <div class="producto__info">
@@ -160,7 +156,7 @@
         </footer>
     </div>
     <script src="../JavaScript/carrito.js"></script>
-<script src="../../JavaScript/menuhamburguesa.js"></script>
+    <script src="../../JavaScript/menuhamburguesa.js"></script>
     <script src="../../JavaScript/cerrarsesion.js"></script>
 </body>
 

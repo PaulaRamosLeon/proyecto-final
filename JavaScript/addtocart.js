@@ -1,5 +1,5 @@
 
-const botonesAgregar = document.querySelectorAll(".libro__comprar");
+const botonesAgregar = document.querySelectorAll(".libro__comprar, .libro__masinfo");
 
 botonesAgregar.forEach(button => {
     button.addEventListener("click", () =>{
