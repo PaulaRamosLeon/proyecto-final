@@ -1,7 +1,8 @@
 .catalogo {
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    --grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     padding: 15px;
@@ -15,10 +16,17 @@
     margin: 10px;
 }
 
+.catalogo__libro{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 
 .catalogo__libro .libro__portada {
     height: 25rem;
-
+    
 }
 
 .catalogo__botones {
@@ -62,4 +70,18 @@ gap: 2px;
 .boton__activo {
     color: white;
     background-color: var(--primary-color);
+}
+
+
+
+@media (max-width: 1000px) {
+    .catalogo__libro .libro__portada {
+        height: auto;
+        max-width: 60vw;
+    }
+
+    .catalogo{
+        grid-template-columns: 80vw;
+
+    }
 }

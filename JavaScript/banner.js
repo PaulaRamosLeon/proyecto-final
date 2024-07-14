@@ -1,3 +1,5 @@
+// Banner de la página de inicio 
+
 // -----------------------------------------
 // 1. Declaramos variables y constantes
 // -----------------------------------------
@@ -6,7 +8,7 @@
 const sliderImages = document.querySelector(".banner__imagenes");
 const listImages = document.querySelectorAll(".banner__imagen");
 
-// Botones
+// Botones. Para que los botones funcionen:
 const btnPrev = document.querySelector(".banner__atras");
 const btnNext = document.querySelector(".banner__siguiente");
 
@@ -41,8 +43,8 @@ function prevImagen() {
 }
 
 function actualizarSlider() {
-   //const width = sliderImages.clientWidth; //el ancho de la pantalla
-   const width = listImages[0].width;
+    //const width = sliderImages.clientWidth; //el ancho de la pantalla
+    const width = listImages[0].width;
     sliderImages.style.transform = `translateX(${-width * imgIndex}px)`;
 
 
@@ -50,7 +52,7 @@ function actualizarSlider() {
 
 
 // -----------------------------------------
-// Crear intervalos
+// Crear intervalos. Cada 5 segundos, la imagen del banner pasa a la siguiente y, cuando llega a la última, vuelve a empezar. 
 // -----------------------------------------
 
 let intervalos;

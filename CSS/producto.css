@@ -16,13 +16,19 @@
     display: flex;
     flex-direction: row;
     line-height: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto__info{
+    max-width: 40em;
 }
 
 
 .producto__izquierda {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 10rem;
+
     align-items: center;
     gap: 20px;
 }
@@ -60,9 +66,7 @@
 
 }
 
-.producto__info {
-    margin: 5rem 0 0 10rem;
-}
+
 
 .producto__sinopsis{
     margin: 0 0 1em 0;
@@ -91,12 +95,16 @@
     flex-direction: row;
     justify-items: center;
     padding: 0 0 3rem 0;
+    gap:2em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .reviews__columna{
     display: flex;
     flex-direction: column;
     gap: 2em;
     align-items: center;
+    
 }
 
 .reviews__review {
@@ -110,8 +118,7 @@
     align-items: center;
     gap: 10px;
     background-image: linear-gradient(to right, #ffd8e5, #ff98bc);
-    width: 80%;
-    height: 80%;
+    max-width:30em;
 
 }
 
@@ -153,6 +160,7 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2rem 0;
+    overflow: scroll;
 }
 
 .novedades__libro .libro__portada {
@@ -176,9 +184,11 @@ p {
     font-size: 1.5em;
 }
 
-@media only screen and (max-width: 700px){
-    .reviews{
-        flex-wrap: wrap;
+@media (max-width: 1000px) {
+    .reviews__review {
+
+        max-width:80vw;
+        min-width: 0px;
     }
 }
 
