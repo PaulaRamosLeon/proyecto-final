@@ -43,7 +43,6 @@ function prevImagen() {
 }
 
 function actualizarSlider() {
-    //const width = sliderImages.clientWidth; //el ancho de la pantalla
     const width = listImages[0].width;
     sliderImages.style.transform = `translateX(${-width * imgIndex}px)`;
 
@@ -57,6 +56,11 @@ function actualizarSlider() {
 
 let intervalos;
 agregarIntervalo();
+
+
+// -----------------------------------------
+// Descomentar estas lineas para que, al hacer hover, el banner pare de deslizar
+// -----------------------------------------
 
 /* sliderImages.addEventListener("mouseover", () => {
     clearInterval(intervalos);

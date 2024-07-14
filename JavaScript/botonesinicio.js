@@ -1,10 +1,19 @@
+// Secciones NOVEDADES/RECOMENDADOS de la página de inicio
+
+// -----------------------------------------
+// 1. Declaramos variables y constantes
+// -----------------------------------------
+
 const btnNovedades = document.querySelector("#novedades__boton");
 const btnRecomendados = document.querySelector("#recomendado__boton");
 const novedades = document.querySelector(".contenedor__novedades");
 const recomendados = document.querySelector(".contenedor__recomendados");
 
 
-//Mostrar novedades
+// -----------------------------------------
+// 2. Añadir event listener para mostrar novedades y ocultar recomendados
+// -----------------------------------------
+
 btnNovedades.addEventListener("click", () => {
     novedades.style.display="grid";
     recomendados.style.display="none";
@@ -16,7 +25,10 @@ btnNovedades.addEventListener("click", () => {
 });
 
 
-// Mostrar recomendados
+// -----------------------------------------
+// 3. Añadir event listener para mostrar recomendados y ocultar novedades
+// -----------------------------------------
+
 btnRecomendados.addEventListener("click", () => {
     recomendados.style.display="grid";
     novedades.style.display="none";
