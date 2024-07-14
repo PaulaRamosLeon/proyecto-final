@@ -12,6 +12,9 @@ const listImages = document.querySelectorAll(".banner__imagen");
 const btnPrev = document.querySelector(".banner__atras");
 const btnNext = document.querySelector(".banner__siguiente");
 
+//
+const enlaces = ["./descubriendoelmundo.html", "#", "./carton.html"];
+
 let imgIndex = 0; // índice de imagen actual
 const totalImages = listImages.length; // total de imágenes
 
@@ -49,6 +52,9 @@ function actualizarSlider() {
 
 }
 
+function agregarIntervalo() {
+    intervalos = setInterval(nextImagen, 5000);
+}
 
 // -----------------------------------------
 // Crear intervalos. Cada 5 segundos, la imagen del banner pasa a la siguiente y, cuando llega a la última, vuelve a empezar. 
@@ -57,6 +63,9 @@ function actualizarSlider() {
 let intervalos;
 agregarIntervalo();
 
+for(let i = 0; i<listImages.length; i++){
+    listImages[i].addEventListener("click", ()=>{ window.location = enlaces[i] });
+}
 
 // -----------------------------------------
 // Descomentar estas lineas para que, al hacer hover, el banner pare de deslizar
@@ -70,6 +79,3 @@ sliderImages.addEventListener("mouseout", () => {
     agregarIntervalo()
 }); */
 
-function agregarIntervalo() {
-    intervalos = setInterval(nextImagen, 5000);
-}

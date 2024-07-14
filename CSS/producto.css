@@ -160,7 +160,6 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2rem 0;
-    overflow: scroll;
 }
 
 .novedades__libro .libro__portada {
@@ -189,6 +188,12 @@ p {
 
         max-width:80vw;
         min-width: 0px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .relacionados{
+        overflow: scroll;
     }
 }
 
