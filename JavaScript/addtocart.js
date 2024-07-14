@@ -14,3 +14,5 @@ botonesAgregar.forEach(button => {
     });
 
 });
+
+// Para borrar el carrito, localStorage.removeItem('carrito')

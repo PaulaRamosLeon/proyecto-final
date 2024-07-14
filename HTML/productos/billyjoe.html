@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billy Joe y los robots comeantenas</title>
-    <link rel="stylesheet" href="../../css/producto.css">
+    
     <link rel="stylesheet" href="../../CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,40 +17,39 @@
 
 <body>
     <div class="main">
-                <!--Aquí empieza el header-->
-        <header class="navbar">
-            <a href="../index.html">
-                <img class="navbar__logo" src="../../imgs/logo-valkiria.png" alt="Logo Valkiria">
-            </a>
-                <button class="navbar__hamburguesa"><i class="fa-solid fa-bars"></i></button>
-                <ul class="navbar__menu">
-                    <li class="navbar__li">
-                        <a class="navbar__a" href="#">Inicio</a>
-                    </li>
-                    <li class="navbar__dropdown--catalogo navbar__li">
-                        <a class="navbar__a" href="../catalogo.html">Catálogo</a>
-                        <ul class="dropdown__ul">
-                            <li class="dropdown__li"> <a href="./descubriendoelmundo.html">> Descubriendo el mundo</a>
-                            </li>
-                            <li class="dropdown__li"> <a href="./novela.html">> Novela ilustrada</a></li>
-                            <li class="dropdown__li"> <a href="./carton.html">> Libros de cartón</a></li>
-                            <li class="dropdown__li"> <a href="./escolares.html">> Libros escolares</a></li>
-                            <li class="dropdown__li"> <a href="./albumes.html">> Álbumes ilustrados</a></li>
-                        </ul>
-                    </li>
+       <!--Aquí empieza el header-->
+       <header class="navbar">
+        <a href="../index.html">
+             <img class="navbar__logo" src="../../imgs/logo-valkiria.png" alt="Logo Valkiria">
+         </a>
+         <button class="navbar__hamburguesa"><i class="fa-solid fa-bars"></i></button>
+         <ul class="navbar__menu">
+             <li class="navbar__li">
+                 <a class="navbar__a" href="../index.html">Inicio</a>
+             </li>
+             <li class="navbar__dropdown--catalogo navbar__li">
+                 <a class="navbar__a" href="../catalogo.html">Catálogo</a>
+                 <ul class="dropdown__ul">
+                     <li class="dropdown__li"> <a href="../descubriendoelmundo.html">> Descubriendo el mundo</a></li>
+                     <li class="dropdown__li"> <a href="../novela.html">> Novela ilustrada</a></li>
+                     <li class="dropdown__li"> <a href="../carton.html">> Libros de cartón</a></li>
+                     <li class="dropdown__li"> <a href="../escolares.html">> Libros escolares</a></li>
+                     <li class="dropdown__li"> <a href="../albumes.html">> Álbumes ilustrados</a></li>
+                 </ul>
+             </li>
 
-                    <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
-                        <ul class="dropdown__ul">
-                            <li class="dropdown__li"> <a id="dropdown__sesion" href="#">Cerrar sesión</a></li>
-                        </ul>
-                    </li>
-                    <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
-                                class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="navbar__li"> <a class="navbar__a" href="./carrito.html"><i
-                                class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-        </header>
-        <!--Aquí acaba el header-->
+             <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
+                 <ul class="dropdown__ul">
+                     <li class="dropdown__li"> <a id="dropdown__sesion" href="#">Cerrar sesión</a></li>
+                 </ul>
+             </li>
+             <li class="navbar__li"> <a class="navbar__a" href="../buscador.html"><i
+                         class="fa-solid fa-magnifying-glass"></i></a></li>
+             <li class="navbar__li"> <a class="navbar__a" href="../carrito.html"><i
+                         class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+         </ul>
+     </header>
+     <!--Aquí acaba el header-->
         <main class="paginaproducto">
             <dialog class="dialog">
                 <div class="dialog__contenedor">
@@ -84,7 +83,7 @@
                             <li>Edad recomendada: A partir de 8 años</li>
                             <p>Precio: 10,85€</p>
                         </ul>
-                        <button class="libro__masinfo"><a class="button__carrito" href="#"><i
+                        <button class="libro__comprar"><a class="button__carrito" href="#"><i
                                     class="fa-solid fa-cart-shopping"></i></a> Añadir al
                             carrito</button>
                     </div>
@@ -135,7 +134,7 @@
                                 class="libro__portada">
                             <p class="libro__titulo">Jano salva el mundo</p>
                             <p class="libro__autor">Lola Llatas</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                     <div class="relacionados__libro">
@@ -144,7 +143,7 @@
                                 class="libro__portada">
                             <p class="libro__titulo">María Fútbol Club</p>
                             <p class="libro__autor">José Carlos Andrés</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                     <div class="relacionados__libro">
@@ -152,7 +151,7 @@
                             <img src="../../imgs/libros/escolares/ka.png" alt="Me llamo Ka" class="libro__portada">
                             <p class="libro__titulo">Me llamo Ka</p>
                             <p class="libro__autor">Daniel Hernández Chambers</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                     <div class="relacionados__libro">
@@ -160,7 +159,7 @@
                             <img src="../../imgs/libros/escolares/olas.png" alt="" class="libro__portada">
                             <p class="libro__titulo">El día que las olas...</p>
                             <p class="libro__autor">Cinta Arasa</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
 
@@ -187,8 +186,9 @@
     
             </footer>
     </div>
-<script src="../../JavaScript/menuhamburguesa.js"></script>
+    <script src="../../JavaScript/menuhamburguesa.js"></script>
     <script src="../../JavaScript/cerrarsesion.js"></script>
+    <script src="../../JavaScript/addtocart.js"></script>
 </body>
 
 </html>

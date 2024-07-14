@@ -320,12 +320,15 @@ a {
     color: var(--primary-color);
 }
 
-.libro__masinfo:hover,
-.libro__comprar:hover {
+.libro__masinfo:hover {
     background-color: #bac9ff;
     border-color: var(--primary-color);
 }
 
+.catalogo__libro .libro__comprar:hover, .libro__comprar:hover {
+    background-color: #bac9ff;
+    border-color: var(--primary-color);
+}
 .contenedor__botones {
     display: flex;
     justify-content: center;
@@ -902,11 +905,18 @@ p {
 
 }
 
-.libro__titulo {
-    font-size: 1.5em;
+
+.catalogo__libro .libro__comprar {
+    width: 8rem;
+    border-color: var(--primary-color);
+    align-self: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    height: 3em;
+    width: 4.5rem;
+
 }
-
-
 /* Media queries para pantallas más pequeñas */
 @media (max-width: 1000px) {
     .main {

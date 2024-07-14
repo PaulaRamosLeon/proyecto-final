@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cazamitos. ¡Ponte a prueba contra las noticias falsas!</title>
-    <link rel="stylesheet" href="../../css/producto.css">
+
     <link rel="stylesheet" href="../../CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
 <body>
     <div class="main">
-                <!--Aquí empieza el header-->
+        <!--Aquí empieza el header-->
         <header class="navbar">
             <a href="../index.html">
                 <img class="navbar__logo" src="../../imgs/logo-valkiria.png" alt="Logo Valkiria">
@@ -25,7 +25,7 @@
             <button class="navbar__hamburguesa"><i class="fa-solid fa-bars"></i></button>
             <ul class="navbar__menu">
                 <li class="navbar__li">
-                    <a class="navbar__a" href="#">Inicio</a>
+                    <a class="navbar__a" href="../index.html">Inicio</a>
                 </li>
                 <li class="navbar__dropdown--catalogo navbar__li">
                     <a class="navbar__a" href="../catalogo.html">Catálogo</a>
@@ -43,9 +43,9 @@
                         <li class="dropdown__li"> <a id="dropdown__sesion" href="#">Cerrar sesión</a></li>
                     </ul>
                 </li>
-                <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
+                <li class="navbar__li"> <a class="navbar__a" href="../buscador.html"><i
                             class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="navbar__li"> <a class="navbar__a" href="./carrito.html"><i
+                <li class="navbar__li"> <a class="navbar__a" href="../carrito.html"><i
                             class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </header>
@@ -57,7 +57,8 @@
                     <h1>Has cerrado la sesión</h1>
                     <p>¡Vuelve pronto!</p>
                 </div>
-            </dialog><div class="producto">
+            </dialog>
+            <div class="producto">
                 <div class="producto__izquierda">
                     <img src="../../imgs/libros/mundo/cazamitos.png" alt="Top Ten. Los diez dinosaurios más peligrosos"
                         class="producto__imagen">
@@ -83,7 +84,7 @@
                             <li>Edad recomendada: A partir de 8 años</li>
                             <p>Precio: 16,50€</p>
                         </ul>
-                        <button class="libro__masinfo"><a class="button__carrito" href="#"><i
+                        <button class="libro__comprar"><a class="button__carrito" href="#"><i
                                     class="fa-solid fa-cart-shopping"></i></a> Añadir al
                             carrito</button>
                     </div>
@@ -136,7 +137,7 @@
                                 class="libro__portada">
                             <p class="libro__titulo">De la tierra al espacio</p>
                             <p class="libro__autor">Pavla Hanáčková</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                     <div class="relacionados__libro">
@@ -145,7 +146,7 @@
                                 class="libro__portada">
                             <p class="libro__titulo">Cosas que no...</p>
                             <p class="libro__autor">Pavla Hanáčková</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                     <div class="relacionados__libro">
@@ -154,7 +155,7 @@
                                 class="libro__portada">
                             <p class="libro__titulo">¿Qué es la Unión Europea?</p>
                             <p class="libro__autor">Pedro Riera</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                     <div class="relacionados__libro">
@@ -163,34 +164,36 @@
                                 alt="Top Ten. Los diez dinosaurios más peligrosos" class="libro__portada">
                             <p class="libro__titulo">Top Ten. Los diez...</p>
                             <p class="libro__autor">Cristina Banfi</p>
-                            <button class="libro__masinfo">Más información</button>
+                            <button class="libro__comprar">Más información</button>
                         </a>
                     </div>
                 </div>
 
 
         </main>
-            <!--Aquí empieza el footer-->
-            <footer class="footer">
-                <div class="footer__redes">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <div class="footer__nosotros">
-                    <p><a href="../nosotros.html">
-                            Sobre nosotros</a></p>
-                </div>
-                <div class="footer__informacion">
-                    <p>
-    
-                    <p><a href="../tyc.html">Términos y condiciones</a></p>
-                </div>
-    
-            </footer>
+        <!--Aquí empieza el footer-->
+        <footer class="footer">
+            <div class="footer__redes">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="footer__nosotros">
+                <p><a href="../nosotros.html">
+                        Sobre nosotros</a></p>
+            </div>
+            <div class="footer__informacion">
+                <p>
+
+                <p><a href="../tyc.html">Términos y condiciones</a></p>
+            </div>
+
+        </footer>
     </div>
-<script src="../../JavaScript/menuhamburguesa.js"></script>
+        <script src="../../JavaScript/menuhamburguesa.js"></script>
     <script src="../../JavaScript/cerrarsesion.js"></script>
+    <script src="../../JavaScript/addtocart.js"></script>
+    <script src="../../JavaScript/addtocart.js"></script>
 </body>
 
 </html>
