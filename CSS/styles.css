@@ -9,6 +9,7 @@ body {
     --primary-color: #597CFF;
     --secondary-color: #D64879;
     --fondo-color:#f9f9fe;
+    --boton-hover: #bac9ff;
 }
 
 /*ESTILOS DEL HEADER*/
@@ -321,12 +322,12 @@ a {
 }
 
 .libro__masinfo:hover {
-    background-color: #bac9ff;
+    background-color: var(--boton-hover);
     border-color: var(--primary-color);
 }
 
 .catalogo__libro .libro__comprar:hover, .libro__comprar:hover {
-    background-color: #bac9ff;
+    background-color: var(--boton-hover);
     border-color: var(--primary-color);
 }
 .contenedor__botones {
