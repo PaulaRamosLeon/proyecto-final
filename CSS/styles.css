@@ -482,7 +482,11 @@ a {
     font-weight: bold;
     margin: 0.2em;
 }
-
+.cesta--column {
+    display: flex;
+    flex-direction: column;
+    max-width: 40em;
+}
 .cesta__boton {
     cursor: pointer;
     background-color: var(--primary-color);
@@ -507,6 +511,7 @@ a {
     padding: 20px;
     border-radius: 25px;
     border: 5px solid white;
+    margin: 0 0 2em 0;
 }
 
 
