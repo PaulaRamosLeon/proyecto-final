@@ -8,8 +8,19 @@
 body {
     --primary-color: #597CFF;
     --secondary-color: #D64879;
-    --fondo-color:#f9f9fe;
+    --fondo-color:#ffebf211;
     --boton-hover: #bac9ff;
+}
+
+.main {
+    box-shadow: 6px -5px 8px 0px rgba(255,207,224,1);
+    border-radius: 25px;
+    border: 5px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 8rem 2rem 8rem;
+    background-color: var(--fondo-color);
+    overflow: hidden;
 }
 
 /*ESTILOS DEL HEADER*/
@@ -137,16 +148,7 @@ body {
     cursor: pointer;
 }
 /*ESTILOS INICIO*/
-.main {
 
-    border-radius: 25px;
-    border: 5px solid var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 8rem 2rem 8rem;
-    background-color: #f5f5fd98;
-    overflow: hidden;
-}
 
 .contenedor {
 
