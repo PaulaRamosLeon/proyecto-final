@@ -105,9 +105,7 @@ body {
 
 }
 
-.fa-solid {
-    color: var(--secondary-color);
-}
+
 
 /* ESTILOS DIÁLOGO*/
 .dialog {
@@ -570,7 +568,9 @@ a {
 }
 
 .compra__grafico {
-    width: 30vw;
+    max-width: 90vw;
+    width: 36em;
+    margin: 3em;
 }
 
 .compra__proceso {
@@ -655,13 +655,13 @@ a {
     margin: 0em 0em 2em 0em;
 }
 
-.enviar {
+.formulario__enviar {
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
     border-radius: 20px;
     color: white;
     width: 80px;
-    margin: 0 auto;
+    margin: 0.5em auto;
     padding: 5px 15px;
 }
 
@@ -720,12 +720,17 @@ a {
     justify-items: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.745);
+    margin: 2em 0em 0em 0em;
 }
 
 .footer__redes i {
     font-size: 30px;
     padding: 5px;
 
+}
+/*ESTILOS PAGO*/
+.fieldset__fila {
+    padding: 0.4em;
 }
 
 /*ESTILOS DE LAS PÁGINAS DE PRODUCTO*/

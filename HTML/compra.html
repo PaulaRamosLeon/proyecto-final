@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valkiria - Registro</title>
-   
+
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/2b5178f0cc.js" crossorigin="anonymous"></script>
     <!--MONTSERRAT-->
@@ -55,39 +55,51 @@
         <!--FORMULARIO DE REGISTRO-->
         <h1 class="registro__h1">Formulario de registro</h1>
 
-        <form class="formulario" id="registro-usuario" action="../HTML/index.html" method="get">
+        <form class="formulario" id="comprar" action="../HTML/pago.html" method="get">
             <fieldset class="formulario__fieldset">
-                <legend class="fieldset__legend">Date de alta</legend>
-                <label class="fieldset__label" for="usuario" autofocus>Escoge un nombre de usuario:</label>
-                <input class="fieldset__input" type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario"
-                    required autofocus>
+                <legend class="fieldset__legend">Información de pago</legend>
+                <label class="fieldset__label" for="nombre" autofocus>Nombre:</label>
+                <input class="fieldset__input" type="text" name="nombre" id="nombre" required autofocus>
+                <label class="fieldset__label" for="apellido" autofocus>Apellidos:</label>
+                <input class="fieldset__input" type="text" name="apellido" id="apellido" required autofocus>
                 <label class="fieldset__label" for="email">Email:</label>
                 <input class="fieldset__input" type="email" name="email" id="email" placeholder="Escribe tu email"
                     required>
-                <label class="fieldset__label" for="password">Contraseña:</label>
-                <input class="fieldset__input" type="password" id="password" name="password" placeholder="Contraseña"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Debe contener al menos un número, una mayúscula, una minúscula y, como mínimo, 8 caracteres"
-                    required>
-                <label class="fieldset__label" for="confirm-passwordpassword">Repite tu contraseña:</label>
-                <input class="fieldset__input" type="password" id="confirm-password" name="confirm-password"
-                    placeholder="Repite tu contraseña" required>
+                <label class="fieldset__label" for="direccion">Dirección:</label>
+                <input class="fieldset__input" type="text" name="direccion" id="direccion" placeholder="Calle, número, piso y puerta" required>
+                <label class="fieldset__label" for="ciudad">Ciudad:</label>
+                <input class="fieldset__input" type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+                <label class="fieldset__label" for="cp">Código postal:</label>
+                <input class="fieldset__input" type="number" name="cp" id="cp" placeholder="Código postal" required>
                 <label class="fieldset__label" for="pais">Indica tu país:</label>
                 <select class="fieldset__select" name="pais" id="pais" placeholder="¿Cuál es tu país?" cols="30"
                     rows="1">
                     <option value="españa">España</option>
                     <option value="portugal">Portugal</option>
                     <option value="marruecos">Marruecos</option>
-
                 </select>
-                <label class="fieldset__label" for="date">Indica tu fecha de nacimiento: </label>
-                <input class="fieldset__input" type="date" id="date" name="Fecha-nacimiento">
-                <div class="fila">
+                <label class="fieldset__label" for="metodo">Método de pago:</label>
+                <div class="fieldset__fila">
+                    <input type="radio" value="tarjeta" name="pago" required> <i class="fa-solid fa-credit-card"></i> Tarjeta
+                </div>
+                <div class="fieldset__fila">
+                    <input type="radio" value="google-pay" name="pago"> <i class="fa-brands fa-google-pay"></i> Google
+                    Pay
+                </div>
+                <div class="fieldset__fila">
+                    <input type="radio" value="paypal" name="pago" checked> <i class="fa-brands fa-paypal"></i>
+                    Paypal
+                </div>
+                <div class="fieldset__fila">
+                    <input type="radio" value="contrarreembolso" name="pago"> <i class="fa-solid fa-money-bill"></i>
+                    Contrarreembolso
+                </div>
+                <div class="fieldset__fila">
                     <input type="checkbox" name="fila" required> Acepto los <a href="./tyc.html"
                         target="_blank">términos y condiciones
                     </a></input>
                 </div>
-                <input class="formulario__enviar" type="submit" value="Enviar">
+                <input class="formulario__enviar" type="submit" value="Pagar">
             </fieldset>
         </form>
         <!--Aquí empieza el footer-->
