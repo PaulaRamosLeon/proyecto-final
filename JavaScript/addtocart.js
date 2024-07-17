@@ -11,8 +11,8 @@ botonesAgregar.forEach(button => {
         var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         carrito.push(producto);
         localStorage.setItem('carrito', JSON.stringify(carrito));
+        alert("¡Producto añadido con éxito!")
     });
-
 });
 
 // Para borrar el carrito, localStorage.removeItem('carrito')
