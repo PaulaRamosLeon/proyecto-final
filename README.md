@@ -21,7 +21,8 @@ El proyecto cuenta con los siguientes archivos HTML:
 - Cátalogo por colección
 - 30 páginas de producto
 - Carrito de compra
-- Pago/pedido en proceso de envío
+- Pago
+- Pedido en proceso
 - Formulario de registro
 - Sobre nosotros
 - Términos y condiciones
