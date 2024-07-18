@@ -11,8 +11,8 @@ const menu = document.querySelector('.navbar__menu');
 // 2. Añadimos event listeners
 // -----------------------------------------
 
-botonHamburguesa.addEventListener("click", () =>{
-    if(menu.style.display == 'none'){
+botonHamburguesa.addEventListener("click", () => {
+    if (menu.style.display == 'none') {
         menu.style.display = 'flex';
     } else {
         menu.style.display = 'none';

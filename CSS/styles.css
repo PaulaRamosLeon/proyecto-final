@@ -84,6 +84,7 @@ body {
     top: 25px;
     height: 12em;
     background-color: white;
+    left: -6em;
 }
 
 .navbar__menu li:nth-child(even) a {
@@ -97,7 +98,7 @@ body {
 .navbar__dropdown--usuario:hover .dropdown__ul {
     display: block;
     top: 25px;
-    height: 3em;
+    height: 7em;
     background-color: white;
 
 }
@@ -756,9 +757,12 @@ a {
 
 .producto__info {
     max-width: 80vw;
-    width: 40em;
 }
 
+.producto__datos {
+    width: 40em;
+    max-width: 80vw;
+}
 
 .producto__izquierda {
     display: flex;

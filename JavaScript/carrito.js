@@ -1,20 +1,21 @@
 // Página del carrito
-// Primero cargamos desde local storage
-const cestaInfo = document.querySelector(".cesta__info");
-cargarDesdeLocalStorage();
 
 // -----------------------------------------
 // 1. Declaramos variables y constantes
 // -----------------------------------------
+const cestaInfo = document.querySelector(".cesta__info");
+// Primero cargamos desde local storage para después poder añadir los productos a la página
+cargarDesdeLocalStorage();
 
 const listaProductos = document.querySelectorAll(".cesta__producto");
 const precioTotal = document.querySelector(".cesta__total");
+
 // -----------------------------------------
 // 2. Definimos funciones
 // -----------------------------------------
 
+// Función que coge el precio de cada producto y lo suma al total
 function calcularTotal() {
-    // Cada vez que calculamos el total tenemos que buscar el elemento, sino no va.
 
     let total = 0;
     listaProductos.forEach(producto => {
@@ -24,9 +25,10 @@ function calcularTotal() {
 
         total = total + cantidad*precio;
     });
-    precioTotal.innerText= total;
+    precioTotal.innerText= total.toFixed(2); // para que solo se muestren dos decimales
 }
 
+// Función que añade el HTML necesario a partir de los datos guardados en LocalStorage
 function cargarDesdeLocalStorage(){
     var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.forEach(producto => {
@@ -52,6 +54,7 @@ function cargarDesdeLocalStorage(){
 // 3. Event listeners para añadir y quitar unidades de un producto
 // -----------------------------------------
 
+// A cada botón + y - se le añade un eventListener
 listaProductos.forEach(producto => {
     const botonMenos = producto.querySelectorAll(".cantidad__boton")[0];
     const botonMas = producto.querySelectorAll(".cantidad__boton")[1];
@@ -60,7 +63,7 @@ listaProductos.forEach(producto => {
     botonMenos.addEventListener("click", () =>{
         cantidad.innerText--;
 
-        // Cuando se quita la ultima unidad del producto, se quita el producto
+        // Cuando se quita la última unidad del producto, se quita el producto
         if(cantidad.innerText==0) {
            producto.remove();
         }

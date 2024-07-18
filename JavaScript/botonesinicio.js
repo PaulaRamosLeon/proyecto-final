@@ -1,4 +1,5 @@
 // Secciones NOVEDADES/RECOMENDADOS de la página de inicio
+// El usuario decide si ver las novedades o los libros recomendados del inicio
 
 // -----------------------------------------
 // 1. Declaramos variables y constantes
@@ -15,8 +16,8 @@ const recomendados = document.querySelector(".contenedor__recomendados");
 // -----------------------------------------
 
 btnNovedades.addEventListener("click", () => {
-    novedades.style.display="grid";
-    recomendados.style.display="none";
+    novedades.style.display = "grid";
+    recomendados.style.display = "none";
 
     btnNovedades.classList.add("novedades__boton--btnActivo");
     btnNovedades.classList.remove("novedades__boton--btnInactivo");
@@ -30,8 +31,8 @@ btnNovedades.addEventListener("click", () => {
 // -----------------------------------------
 
 btnRecomendados.addEventListener("click", () => {
-    recomendados.style.display="grid";
-    novedades.style.display="none";
+    recomendados.style.display = "grid";
+    novedades.style.display = "none";
 
     btnNovedades.classList.remove("novedades__boton--btnActivo");
     btnNovedades.classList.add("novedades__boton--btnInactivo");

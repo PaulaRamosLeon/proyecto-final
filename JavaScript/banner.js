@@ -12,7 +12,7 @@ const listImages = document.querySelectorAll(".banner__imagen");
 const btnPrev = document.querySelector(".banner__atras");
 const btnNext = document.querySelector(".banner__siguiente");
 
-//
+// A cada imagen se le añade el enlace que esté en su misma posición
 const enlaces = ["./descubriendoelmundo.html", "#", "./carton.html"];
 
 let imgIndex = 0; // índice de imagen actual
@@ -27,6 +27,7 @@ btnPrev.addEventListener("click", prevImagen);
 // 2. Funciones
 // -----------------------------------------
 
+// Para pasar a la siguiente imagen
 function nextImagen() {
     imgIndex++;
     if (imgIndex >= totalImages) {
@@ -36,6 +37,7 @@ function nextImagen() {
 
 }
 
+// Para volver a la imagen anterior
 function prevImagen() {
     imgIndex--;
     if (imgIndex < 0) {
@@ -63,8 +65,8 @@ function agregarIntervalo() {
 let intervalos;
 agregarIntervalo();
 
-for(let i = 0; i<listImages.length; i++){
-    listImages[i].addEventListener("click", ()=>{ window.location = enlaces[i] });
+for (let i = 0; i < listImages.length; i++) {
+    listImages[i].addEventListener("click", () => { window.location = enlaces[i] });
 }
 
 // -----------------------------------------

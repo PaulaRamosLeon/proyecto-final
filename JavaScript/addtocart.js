@@ -1,8 +1,9 @@
-
+// Para poder añadir los productos al carrito
 const botonesAgregar = document.querySelectorAll(".libro__comprar");
 
+// Añadimos a cada botón de añadir al carrito un eventListener
 botonesAgregar.forEach(button => {
-    button.addEventListener("click", () =>{
+    button.addEventListener("click", () => {
         var producto = {
             titulo: button.dataset.titulo,
             precio: button.dataset.precio,
