@@ -19,42 +19,43 @@
 
 <body>
     <div class="main">
-<!--Aquí empieza el header-->
-<header class="navbar">
-    <a href="./index.html">
-        <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="Logo Valkiria">
-    </a>
-    <button class="navbar__hamburguesa"><i class="fa-solid fa-bars"></i></button>
-    <ul class="navbar__menu">
-        <li class="navbar__li">
-            <a class="navbar__a" href="./index.html">Inicio</a>
-        </li>
-        <li class="navbar__dropdown--catalogo navbar__li">
-            <a class="navbar__a" href="./catalogo.html">Catálogo</a>
-            <ul class="dropdown__ul">
-                <li class="dropdown__li"> <a href="#">> Descubriendo el mundo</a></li>
-                <li class="dropdown__li"> <a href="./novela.html">> Novela ilustrada</a></li>
-                <li class="dropdown__li"> <a href="./carton.html">> Libros de cartón</a></li>
-                <li class="dropdown__li"> <a href="./escolares.html">> Libros escolares</a></li>
-                <li class="dropdown__li"> <a href="./albumes.html">> Álbumes ilustrados</a></li>
-            </ul>
-        </li>
+        <!--Aquí empieza el header-->
+        <header class="navbar">
+            <a href="./index.html">
+                <img class="navbar__logo" src="../imgs/logo-valkiria.png" alt="Logo Valkiria">
+            </a>
+            <button class="navbar__hamburguesa"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navbar__menu">
+                <li class="navbar__li">
+                    <a class="navbar__a" href="./index.html">Inicio</a>
+                </li>
+                <li class="navbar__dropdown--catalogo navbar__li">
+                    <a class="navbar__a" href="./catalogo.html">Catálogo</a>
+                    <ul class="dropdown__ul">
+                        <li class="dropdown__li"> <a href="#">> Descubriendo el mundo</a></li>
+                        <li class="dropdown__li"> <a href="./novela.html">> Novela ilustrada</a></li>
+                        <li class="dropdown__li"> <a href="./carton.html">> Libros de cartón</a></li>
+                        <li class="dropdown__li"> <a href="./escolares.html">> Libros escolares</a></li>
+                        <li class="dropdown__li"> <a href="./albumes.html">> Álbumes ilustrados</a></li>
+                    </ul>
+                </li>
 
-        <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
+                <li class="navbar__dropdown--usuario navbar__li"><a href="#"><i class="fa-solid fa-user"></i></a>
                     <ul class="dropdown__ul">
                         <li class="dropdown__li"> <a id="dropdown__registro" href="./registro.html">Registrarse</a></li>
-                        <li class="dropdown__li"> <a id="dropdown__iniciosesion" href="./iniciosesion.html">Iniciar sesión</a></li>
+                        <li class="dropdown__li"> <a id="dropdown__iniciosesion" href="./iniciosesion.html">Iniciar
+                                sesión</a></li>
                         <li class="dropdown__li"> <a id="dropdown__cerrarsesion" href="#">Cerrar sesión</a></li>
                     </ul>
                 </li>
-        <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
-                    class="fa-solid fa-magnifying-glass"></i></a></li>
-        <li class="navbar__li"> <a class="navbar__a" href="./carrito.html"><i
-                    class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-    </ul>
-</header>
-<!--Aquí acaba el header-->
-<!--CATÁLOGO DE LA COLECCIÓN "DESCUBRIENDO EL MUNDO"-->
+                <li class="navbar__li"> <a class="navbar__a" href="./buscador.html"><i
+                            class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="navbar__li"> <a class="navbar__a" href="./carrito.html"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </header>
+        <!--Aquí acaba el header-->
+        <!--CATÁLOGO DE LA COLECCIÓN "DESCUBRIENDO EL MUNDO"-->
         <section class="catalogo__contenedor">
             <dialog class="dialog">
                 <div class="dialog__contenedor">
@@ -62,9 +63,10 @@
                     <h1>Has cerrado la sesión</h1>
                     <p>¡Vuelve pronto!</p>
                 </div>
-            </dialog><h3 class="catalogo__h3">Descubriendo el mundo</h3>
+            </dialog>
+            <h3 class="catalogo__h3">Descubriendo el mundo</h3>
             <div class="catalogo">
-               
+
                 <div class="catalogo__libro">
                     <a href="./productos/topten.html"><img src="../imgs/libros/mundo/dinosaurios.png"
                             alt="Top Ten. Los diez dinosaurios más peligrosos" class="libro__portada"></a>
@@ -73,7 +75,8 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/topten.html">Más información</a></button>
                         <button class="libro__comprar" data-titulo="Top Ten. Los diez dinosaurios más peligrosos"
-                            data-precio="17.50" data-img="../imgs/libros/mundo/dinosaurios.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                            data-precio="17.50" data-img="../imgs/libros/mundo/dinosaurios.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -84,7 +87,8 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/cazamitos.html">Más información</a></button>
                         <button class="libro__comprar" data-titulo="Cazamitos" data-precio="16.50"
-                            data-img="../imgs/libros/mundo/cazamitos.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                            data-img="../imgs/libros/mundo/cazamitos.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -95,7 +99,8 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/dragon.html">Más información</a></button>
                         <button class="libro__comprar" data-titulo="¡Cómo ser tan aseado como un dragón!"
-                            data-precio="14.70" data-img="../imgs/libros/mundo/dragon.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                            data-precio="14.70" data-img="../imgs/libros/mundo/dragon.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -106,7 +111,8 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/espacio.html">Más información</a></button>
                         <button class="libro__comprar" data-titulo="De la tierra al espacio" data-precio="15.70"
-                            data-img="../imgs/libros/mundo/espacio.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                            data-img="../imgs/libros/mundo/espacio.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -117,7 +123,8 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/cosas.html">Más información</a></button>
                         <button class="libro__comprar" data-titulo="Cosas que no se ven a simple vista"
-                            data-precio="15.95" data-img="../imgs/libros/mundo/vista.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                            data-precio="15.95" data-img="../imgs/libros/mundo/vista.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
                 <div class="catalogo__libro">
@@ -128,36 +135,37 @@
                     <div class="catalogo__botones">
                         <button class="libro__masinfo"><a href="./productos/unioneuropea.html">Más
                                 información</a></button>
-                                <button class="libro__comprar" data-titulo="¿Qué es la Unión Europea?" data-precio="17.55"
-                                data-img="../imgs/libros/mundo/unioneuropea.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="libro__comprar" data-titulo="¿Qué es la Unión Europea?" data-precio="17.55"
+                            data-img="../imgs/libros/mundo/unioneuropea.png"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
-            
+
             </div>
 
 
         </section>
-                <!--Aquí empieza el footer-->
-                <footer class="footer">
-                    <div class="footer__redes">
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="footer__nosotros">
-                        <p><a href="./nosotros.html">
-                            Sobre nosotros</a></p>
-                    </div>
-                    <div class="footer__informacion">
-                        <p>
-        
-                        <p><a href="./tyc.html">Términos y condiciones</a></p>
-                    </div>
-        
-                </footer>
+        <!--Aquí empieza el footer-->
+        <footer class="footer">
+            <div class="footer__redes">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com//" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="footer__nosotros">
+                <p><a href="./nosotros.html">
+                        Sobre nosotros</a></p>
+            </div>
+            <div class="footer__informacion">
+                <p>
+
+                <p><a href="./tyc.html">Términos y condiciones</a></p>
+            </div>
+
+        </footer>
 
     </div>
-<script src="../JavaScript/menuhamburguesa.js"></script>
+    <script src="../JavaScript/menuhamburguesa.js"></script>
     <script src="../JavaScript/cerrarsesion.js"></script>
     <script src="../../JavaScript/addtocart.js"></script>
 </body>

@@ -8,12 +8,12 @@
 body {
     --primary-color: #597CFF;
     --secondary-color: #D64879;
-    --fondo-color:#ffebf211;
+    --fondo-color: #ffebf211;
     --boton-hover: #bac9ff;
 }
 
 .main {
-    box-shadow: 6px -5px 8px 0px rgba(255,207,224,1);
+    box-shadow: 6px -5px 8px 0px rgba(255, 207, 224, 1);
     border-radius: 25px;
     border: 5px solid var(--secondary-color);
     display: flex;
@@ -79,7 +79,8 @@ body {
     text-decoration: none;
 }
 
-.navbar__dropdown--catalogo:hover .dropdown__ul, .navbar__dropdown--catalogo:active .dropdown__ul {
+.navbar__dropdown--catalogo:hover .dropdown__ul,
+.navbar__dropdown--catalogo:active .dropdown__ul {
     display: block;
     top: 25px;
     height: 12em;
@@ -148,6 +149,7 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
 /*ESTILOS INICIO*/
 
 
@@ -167,7 +169,7 @@ body {
 
 
 
-    /* ESTILOS BANNER */
+/* ESTILOS BANNER */
 .banner {
     width: 100%;
     overflow: hidden;
@@ -198,11 +200,12 @@ body {
     border-radius: 50px;
     margin: 0em 3em 0em 3em;
 }
-.banner__imagen{
-    width:100%;
+
+.banner__imagen {
+    width: 100%;
 }
 
-    /* SECCIÓN GÉNEROS */
+/* SECCIÓN GÉNEROS */
 .inicio__secciones {
     flex: 70;
 }
@@ -267,7 +270,8 @@ a {
     background: linear-gradient(90deg, rgba(167, 223, 255, 1) 6%, rgba(56, 182, 255, 1) 99%);
     color: #0a1d3d;
 }
-    /*ESTILOS LIBROS DEL INICIO*/
+
+/*ESTILOS LIBROS DEL INICIO*/
 .contenedor__novedades,
 .contenedor__recomendados {
 
@@ -312,7 +316,10 @@ a {
 .fa-cart-shopping {
     color: white;
 }
-.fa-book, .fa-user, .fa-bars {
+
+.fa-book,
+.fa-user,
+.fa-bars {
     color: var(--secondary-color);
 }
 
@@ -330,10 +337,12 @@ a {
     border-color: var(--primary-color);
 }
 
-.catalogo__libro .libro__comprar:hover, .libro__comprar:hover {
+.catalogo__libro .libro__comprar:hover,
+.libro__comprar:hover {
     background-color: var(--boton-hover);
     border-color: var(--primary-color);
 }
+
 .contenedor__botones {
     display: flex;
     justify-content: center;
@@ -487,11 +496,13 @@ a {
     font-weight: bold;
     margin: 0.2em;
 }
+
 .cesta--column {
     display: flex;
     flex-direction: column;
     max-width: 40em;
 }
+
 .cesta__boton {
     cursor: pointer;
     background-color: var(--primary-color);
@@ -734,6 +745,7 @@ a {
     padding: 5px;
 
 }
+
 /*ESTILOS PAGO*/
 .fieldset__fila {
     padding: 0.4em;
@@ -830,7 +842,7 @@ a {
     color: black;
 }
 
-    /*ESTILO REVIEWS*/
+/*ESTILO REVIEWS*/
 
 .reviews {
     margin: 2rem 0;
@@ -938,6 +950,7 @@ p {
     width: 4.5rem;
 
 }
+
 /* Media queries para pantallas más pequeñas */
 @media (max-width: 1000px) {
     .main {
@@ -965,7 +978,7 @@ p {
         padding: 1em;
 
         background-color: var(--fondo-color);
-        border:0px;
+        border: 0px;
         font-size: larger;
     }
 
@@ -1027,8 +1040,8 @@ p {
         max-height: 20em;
     }
 
-    .vendidos__libro{
-        margin:0px;
+    .vendidos__libro {
+        margin: 0px;
 
     }
 
@@ -1041,24 +1054,25 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .cesta__producto{
-        gap:0px;
+    .cesta__producto {
+        gap: 0px;
     }
 
-    .cesta__h1{
+    .cesta__h1 {
         text-align: center;
         align-self: auto;
     }
 
-    .recomendados{
+    .recomendados {
         align-items: center;
     }
 
-    .recomendados__h3{
-        align-self:auto;
+    .recomendados__h3 {
+        align-self: auto;
     }
 
-    .nosotros, .tyc{
+    .nosotros,
+    .tyc {
         padding: 1em 2em;
     }
 
@@ -1073,7 +1087,7 @@ p {
         max-width: 60vw;
     }
 
-    .catalogo{
+    .catalogo {
         grid-template-columns: 80vw;
 
     }
@@ -1086,9 +1100,10 @@ p {
 }
 
 @media (max-width: 700px) {
-    .review__foto{
+    .review__foto {
         display: none;
     }
+
     .producto__imagen {
         margin: 0 auto;
     }
